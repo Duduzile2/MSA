@@ -1,245 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Zipho & Duduzile Story — My Story Animated</title>
-<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;800;900&family=Patrick+Hand&display=swap" rel="stylesheet">
-<style>
-:root {
-  --bg: #0f0f0f;
-  --surface: #212121;
-  --surface2: #2d2d2d;
-  --border: #3d3d3d;
-  --text: #f1f1f1;
-  --muted: #aaaaaa;
-  --red: #ff0000;
-  --pink: #e91e8c;
-  --deep-pink: #ad1457;
-  --lpink: #fce4f5;
-  --purple: #7b1fa2;
-  --lpurple: #ce93d8;
-  --blue: #1565c0;
-  --yellow: #ffd600;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;overflow-x:hidden}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Zipho & Duduzile Story — My Story Animated</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;800;900&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --surface: #212121;
+            --surface2: #2d2d2d;
+            --border: #3d3d3d;
+            --text: #f1f1f1;
+            --muted: #aaaaaa;
+            --red: #ff0000;
+            --pink: #e91e8c;
+            --deep-pink: #ad1457;
+            --lpink: #fce4f5;
+            --purple: #7b1fa2;
+            --lpurple: #ce93d8;
+            --blue: #1565c0;
+            --yellow: #ffd600;
+        }
+        *{margin:0;padding:0;box-sizing:border-box}
+        html{scroll-behavior:smooth}
+        body{background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;overflow-x:hidden}
 
-/* ── NAV ── */
-.nav{position:sticky;top:0;z-index:200;background:var(--bg);border-bottom:1px solid var(--border);height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;gap:16px}
-.nav-logo{display:flex;align-items:center;gap:8px;cursor:pointer}
-.yt-pill{background:var(--red);border-radius:6px;width:34px;height:23px;display:grid;place-items:center}
-.yt-pill::after{content:'';border-left:10px solid white;border-top:6px solid transparent;border-bottom:6px solid transparent;margin-left:2px}
-.nav-logo b{font-family:'Bangers',cursive;font-size:1.25rem;letter-spacing:1px}
-.nav-search{flex:1;max-width:400px;display:flex}
-.nav-search input{flex:1;background:var(--surface);border:1px solid var(--border);border-right:none;border-radius:20px 0 0 20px;padding:8px 16px;color:var(--text);font-size:.88rem;outline:none;font-family:'Nunito',sans-serif}
-.nav-search input:focus{border-color:var(--pink)}
-.nav-search button{background:var(--surface2);border:1px solid var(--border);border-radius:0 20px 20px 0;padding:8px 14px;color:var(--text);cursor:pointer}
-.nav-avatar{width:32px;height:32px;border-radius:50%;background:var(--pink);display:grid;place-items:center;font-weight:900;font-size:.82rem;cursor:pointer;flex-shrink:0}
+        /* ── NAV ── */
+        .nav{position:sticky;top:0;z-index:200;background:var(--bg);border-bottom:1px solid var(--border);height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;gap:16px}
+        .nav-logo{display:flex;align-items:center;gap:8px;cursor:pointer}
+        .yt-pill{background:var(--red);border-radius:6px;width:34px;height:23px;display:grid;place-items:center}
+        .yt-pill::after{content:'';border-left:10px solid white;border-top:6px solid transparent;border-bottom:6px solid transparent;margin-left:2px}
+        .nav-logo b{font-family:'Bangers',cursive;font-size:1.25rem;letter-spacing:1px}
+        .nav-search{flex:1;max-width:400px;display:flex}
+        .nav-search input{flex:1;background:var(--surface);border:1px solid var(--border);border-right:none;border-radius:20px 0 0 20px;padding:8px 16px;color:var(--text);font-size:.88rem;outline:none;font-family:'Nunito',sans-serif}
+        .nav-search input:focus{border-color:var(--pink)}
+        .nav-search button{background:var(--surface2);border:1px solid var(--border);border-radius:0 20px 20px 0;padding:8px 14px;color:var(--text);cursor:pointer}
+        .nav-avatar{width:32px;height:32px;border-radius:50%;background:var(--pink);display:grid;place-items:center;font-weight:900;font-size:.82rem;cursor:pointer;flex-shrink:0}
 
-/* ── BANNER ── */
-.banner{width:100%;height:clamp(120px,22vw,200px);background:linear-gradient(135deg,#1a0a2e,#4a0a6e 40%,#ad1457 70%,#e91e8c);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
-.banner-deco{position:absolute;font-size:1.8rem;opacity:.25;animation:fdeco 4s ease-in-out infinite}
-@keyframes fdeco{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-10px) rotate(12deg)}}
-.banner-title{font-family:'Bangers',cursive;font-size:clamp(1.6rem,5vw,3.2rem);color:white;text-shadow:3px 3px 0 rgba(0,0,0,.4);letter-spacing:3px;text-align:center;z-index:2;position:relative}
-.banner-title span{color:var(--yellow)}
+        /* ── BANNER ── */
+        .banner{width:100%;height:clamp(120px,22vw,200px);background:linear-gradient(135deg,#1a0a2e,#4a0a6e 40%,#ad1457 70%,#e91e8c);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+        .banner-deco{position:absolute;font-size:1.8rem;opacity:.25;animation:fdeco 4s ease-in-out infinite}
+        @keyframes fdeco{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-10px) rotate(12deg)}}
+        .banner-title{font-family:'Bangers',cursive;font-size:clamp(1.6rem,5vw,3.2rem);color:white;text-shadow:3px 3px 0 rgba(0,0,0,.4);letter-spacing:3px;text-align:center;z-index:2;position:relative}
+        .banner-title span{color:var(--yellow)}
 
-/* ── CHANNEL ROW ── */
-.ch-row{max-width:1100px;margin:0 auto;padding:16px 20px 0;display:flex;align-items:flex-start;gap:18px;flex-wrap:wrap}
-.ch-avatar{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));display:grid;place-items:center;font-family:'Bangers',cursive;font-size:1.4rem;color:white;flex-shrink:0;margin-top:-20px;border:4px solid var(--bg);box-shadow:0 0 20px rgba(233,30,140,.35)}
-.ch-meta{flex:1;min-width:200px}
-.ch-name{font-family:'Bangers',cursive;font-size:1.6rem;letter-spacing:2px}
-.ch-handle{color:var(--muted);font-size:.82rem;margin:3px 0}
-.ch-stats{color:var(--muted);font-size:.8rem}
-.ch-stats b{color:var(--lpurple)}
-.ch-actions{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap;align-items:center}
+        /* ── CHANNEL ROW ── */
+        .ch-row{max-width:1100px;margin:0 auto;padding:16px 20px 0;display:flex;align-items:flex-start;gap:18px;flex-wrap:wrap}
+        .ch-avatar{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));display:grid;place-items:center;font-family:'Bangers',cursive;font-size:1.4rem;color:white;flex-shrink:0;margin-top:-20px;border:4px solid var(--bg);box-shadow:0 0 20px rgba(233,30,140,.35)}
+        .ch-meta{flex:1;min-width:200px}
+        .ch-name{font-family:'Bangers',cursive;font-size:1.6rem;letter-spacing:2px}
+        .ch-handle{color:var(--muted);font-size:.82rem;margin:3px 0}
+        .ch-stats{color:var(--muted);font-size:.8rem}
+        .ch-stats b{color:var(--lpurple)}
+        .ch-actions{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap;align-items:center}
 
-/* ── SUBSCRIBE BUTTON ── */
-.btn-sub{background:var(--text);color:var(--bg);border:none;border-radius:20px;padding:10px 22px;font-weight:900;font-size:.88rem;cursor:pointer;font-family:'Nunito',sans-serif;transition:all .25s;position:relative;overflow:hidden}
-.btn-sub.subscribed{background:var(--surface2);color:var(--text);border:1px solid var(--border)}
-.btn-sub:hover{transform:scale(1.05)}
-.btn-sub .sub-text{transition:opacity .2s}
-/* confetti burst */
-.btn-sub .burst{position:absolute;inset:0;pointer-events:none;display:none}
-.btn-sub.subscribed .burst{display:block}
-.btn-bell{background:var(--surface2);border:none;border-radius:20px;padding:10px 14px;color:var(--text);cursor:pointer;font-size:1rem;transition:transform .2s}
-.btn-bell:hover{transform:rotate(20deg) scale(1.1)}
-.btn-bell.ringing{animation:ring .4s ease 2}
-@keyframes ring{0%,100%{transform:rotate(0)}25%{transform:rotate(20deg)}75%{transform:rotate(-20deg)}}
-.btn-join{background:transparent;border:1px solid var(--border);border-radius:20px;padding:10px 16px;color:var(--text);font-size:.82rem;font-family:'Nunito',sans-serif;cursor:pointer;transition:border-color .2s}
-.btn-join:hover{border-color:var(--pink)}
-.sub-count{font-size:.82rem;color:var(--muted);align-self:center;transition:all .3s}
+        /* ── SUBSCRIBE BUTTON ── */
+        .btn-sub{background:var(--text);color:var(--bg);border:none;border-radius:20px;padding:10px 22px;font-weight:900;font-size:.88rem;cursor:pointer;font-family:'Nunito',sans-serif;transition:all .25s;position:relative;overflow:hidden}
+        .btn-sub.subscribed{background:var(--surface2);color:var(--text);border:1px solid var(--border)}
+        .btn-sub:hover{transform:scale(1.05)}
+        .btn-sub .sub-text{transition:opacity .2s}
+        /* confetti burst */
+        .btn-sub .burst{position:absolute;inset:0;pointer-events:none;display:none}
+        .btn-sub.subscribed .burst{display:block}
+        .btn-bell{background:var(--surface2);border:none;border-radius:20px;padding:10px 14px;color:var(--text);cursor:pointer;font-size:1rem;transition:transform .2s}
+        .btn-bell:hover{transform:rotate(20deg) scale(1.1)}
+        .btn-bell.ringing{animation:ring .4s ease 2}
+        @keyframes ring{0%,100%{transform:rotate(0)}25%{transform:rotate(20deg)}75%{transform:rotate(-20deg)}}
+        .btn-join{background:transparent;border:1px solid var(--border);border-radius:20px;padding:10px 16px;color:var(--text);font-size:.82rem;font-family:'Nunito',sans-serif;cursor:pointer;transition:border-color .2s}
+        .btn-join:hover{border-color:var(--pink)}
+        .sub-count{font-size:.82rem;color:var(--muted);align-self:center;transition:all .3s}
 
-/* ── TABS ── */
-.tabs{border-bottom:1px solid var(--border);display:flex;padding:0 20px;max-width:1100px;margin:16px auto 0;overflow-x:auto;gap:0;-ms-overflow-style:none;scrollbar-width:none}
-.tabs::-webkit-scrollbar{display:none}
-.tab{padding:12px 16px;font-size:.88rem;font-weight:700;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;transition:all .2s;font-family:'Nunito',sans-serif}
-.tab:hover{color:var(--text)}
-.tab.active{color:var(--text);border-bottom-color:var(--text)}
+        /* ── TABS ── */
+        .tabs{border-bottom:1px solid var(--border);display:flex;padding:0 20px;max-width:1100px;margin:16px auto 0;overflow-x:auto;gap:0;-ms-overflow-style:none;scrollbar-width:none}
+        .tabs::-webkit-scrollbar{display:none}
+        .tab{padding:12px 16px;font-size:.88rem;font-weight:700;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;transition:all .2s;font-family:'Nunito',sans-serif}
+        .tab:hover{color:var(--text)}
+        .tab.active{color:var(--text);border-bottom-color:var(--text)}
 
-/* ── MAIN CONTENT ── */
-.content{max-width:1100px;margin:0 auto;padding:24px 20px 60px}
+        /* ── MAIN CONTENT ── */
+        .content{max-width:1100px;margin:0 auto;padding:24px 20px 60px}
 
-/* ── PINNED POST ── */
-.pin{background:var(--surface);border-radius:12px;border:1px solid var(--pink);box-shadow:0 0 24px rgba(233,30,140,.12);padding:20px;margin-bottom:32px;position:relative;overflow:hidden}
-.pin::before{content:'📌 PINNED';position:absolute;top:12px;right:16px;font-size:.72rem;color:var(--pink);font-weight:900;letter-spacing:1px}
-.pin-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
-.pin-av{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));display:grid;place-items:center;font-family:'Bangers',cursive;font-size:.85rem;color:white}
-.pin-name{font-weight:800;font-size:.88rem}
-.pin-time{font-size:.75rem;color:var(--muted)}
-.pin-body{font-family:'Patrick Hand',cursive;font-size:1rem;line-height:1.75;margin-bottom:16px}
-.pin-body .hl{color:var(--pink);font-weight:700}
-.cdown{background:linear-gradient(135deg,#1a0a2e,#4a0a6e);border-radius:10px;padding:16px 20px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-.cu{text-align:center;min-width:48px}
-.cn{font-family:'Bangers',cursive;font-size:2.4rem;color:var(--yellow);line-height:1;text-shadow:2px 2px 0 rgba(0,0,0,.3)}
-.cl{font-size:.68rem;color:var(--lpurple);text-transform:uppercase;letter-spacing:1px;font-weight:700}
-.csep{font-family:'Bangers',cursive;font-size:2rem;color:var(--pink);opacity:.5}
-.ctext{font-family:'Patrick Hand',cursive;font-size:.9rem;color:var(--lpink);margin-left:auto;text-align:right}
-.pin-reacts{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
-.react{background:var(--surface2);border-radius:20px;padding:6px 14px;font-size:.82rem;cursor:pointer;transition:all .2s;border:1px solid transparent;display:flex;align-items:center;gap:5px;user-select:none}
-.react:hover{border-color:var(--pink)}
-.react.on{background:rgba(233,30,140,.15);border-color:var(--pink);color:var(--pink)}
-.react-num{transition:all .2s}
+        /* ── PINNED POST ── */
+        .pin{background:var(--surface);border-radius:12px;border:1px solid var(--pink);box-shadow:0 0 24px rgba(233,30,140,.12);padding:20px;margin-bottom:32px;position:relative;overflow:hidden}
+        .pin::before{content:'📌 PINNED';position:absolute;top:12px;right:16px;font-size:.72rem;color:var(--pink);font-weight:900;letter-spacing:1px}
+        .pin-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+        .pin-av{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));display:grid;place-items:center;font-family:'Bangers',cursive;font-size:.85rem;color:white}
+        .pin-name{font-weight:800;font-size:.88rem}
+        .pin-time{font-size:.75rem;color:var(--muted)}
+        .pin-body{font-family:'Patrick Hand',cursive;font-size:1rem;line-height:1.75;margin-bottom:16px}
+        .pin-body .hl{color:var(--pink);font-weight:700}
+        .cdow{background:linear-gradient(135deg,#1a0a2e,#4a0a6e);border-radius:10px;padding:16px 20px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+        .cu{text-align:center;min-width:48px}
+        .cn{font-family:'Bangers',cursive;font-size:2.4rem;color:var(--yellow);line-height:1;text-shadow:2px 2px 0 rgba(0,0,0,.3)}
+        .cl{font-size:.68rem;color:var(--lpurple);text-transform:uppercase;letter-spacing:1px;font-weight:700}
+        .csep{font-family:'Bangers',cursive;font-size:2rem;color:var(--pink);opacity:.5}
+        .ctext{font-family:'Patrick Hand',cursive;font-size:.9rem;color:var(--lpink);margin-left:auto;text-align:right}
+        .pin-reacts{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+        .react{background:var(--surface2);border-radius:20px;padding:6px 14px;font-size:.82rem;cursor:pointer;transition:all .2s;border:1px solid transparent;display:flex;align-items:center;gap:5px;user-select:none}
+        .react:hover{border-color:var(--pink)}
+        .react.on{background:rgba(233,30,140,.15);border-color:var(--pink);color:var(--pink)}
+        .react-num{transition:all .2s}
 
-/* ── SECTION HEADER ── */
-.sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;margin-top:32px}
-.sec-title{font-family:'Bangers',cursive;font-size:1.35rem;letter-spacing:2px}
-.see-all{color:var(--muted);font-size:.82rem;font-weight:700;cursor:pointer;text-decoration:none;transition:color .2s}
-.see-all:hover{color:var(--text)}
+        /* ── SECTION HEADER ── */
+        .sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;margin-top:32px}
+        .sec-title{font-family:'Bangers',cursive;font-size:1.35rem;letter-spacing:2px}
+        .see-all{color:var(--muted);font-size:.82rem;font-weight:700;cursor:pointer;text-decoration:none;transition:color .2s}
+        .see-all:hover{color:var(--text)}
 
-/* ── VIDEO GRID ── */
-.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-bottom:8px}
-.vcard{cursor:pointer;transition:transform .25s}
-.vcard:hover{transform:translateY(-5px)}
-.vcard:hover .voverlay{opacity:1}
-.vthumb{width:100%;aspect-ratio:16/9;border-radius:10px;position:relative;overflow:hidden;margin-bottom:10px}
-.vthumb svg{width:100%;height:100%;display:block}
-.vdur{position:absolute;bottom:7px;right:7px;background:rgba(0,0,0,.85);color:white;font-size:.72rem;font-weight:800;padding:2px 6px;border-radius:4px}
-.voverlay{position:absolute;inset:0;background:rgba(0,0,0,.25);opacity:0;transition:opacity .2s;display:flex;align-items:center;justify-content:center}
-.vplay{width:44px;height:44px;background:rgba(0,0,0,.8);border-radius:50%;display:grid;place-items:center}
-.vplay::after{content:'';border-left:14px solid white;border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:3px}
-.vmeta{display:flex;gap:10px}
-.vav{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));flex-shrink:0;display:grid;place-items:center;font-family:'Bangers',cursive;font-size:.72rem;color:white}
-.vinfo{flex:1}
-.vtitle{font-weight:800;font-size:.88rem;line-height:1.4;color:var(--text);margin-bottom:3px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.vch{font-size:.75rem;color:var(--muted);margin-bottom:2px}
-.vstats{font-size:.75rem;color:var(--muted)}
-.badge{display:inline-block;font-size:.6rem;font-weight:900;padding:2px 6px;border-radius:4px;margin-left:5px;vertical-align:middle;letter-spacing:1px}
-.badge.new{background:var(--pink);color:white}
-.badge.hot{background:var(--yellow);color:#1a0a2e}
+        /* ── VIDEO GRID ── */
+        .vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-bottom:8px}
+        .vcard{cursor:pointer;transition:transform .25s}
+        .vcard:hover{transform:translateY(-5px)}
+        .vcard:hover .voverlay{opacity:1}
+        .vthumb{width:100%;aspect-ratio:16/9;border-radius:10px;position:relative;overflow:hidden;margin-bottom:10px}
+        .vthumb svg{width:100%;height:100%;display:block}
+        .vdur{position:absolute;bottom:7px;right:7px;background:rgba(0,0,0,.85);color:white;font-size:.72rem;font-weight:800;padding:2px 6px;border-radius:4px}
+        .voverlay{position:absolute;inset:0;background:rgba(0,0,0,.25);opacity:0;transition:opacity .2s;display:flex;align-items:center;justify-content:center}
+        .vplay{width:44px;height:44px;background:rgba(0,0,0,.8);border-radius:50%;display:grid;place-items:center}
+        .vplay::after{content:'';border-left:14px solid white;border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:3px}
+        .vmeta{display:flex;gap:10px}
+        .vav{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));flex-shrink:0;display:grid;place-items:center;font-family:'Bangers',cursive;font-size:.72rem;color:white}
+        .vinfo{flex:1}
+        .vtitle{font-weight:800;font-size:.88rem;line-height:1.4;color:var(--text);margin-bottom:3px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+        .vch{font-size:.75rem;color:var(--muted);margin-bottom:2px}
+        .vstats{font-size:.75rem;color:var(--muted)}
+        .badge{display:inline-block;font-size:.6rem;font-weight:900;padding:2px 6px;border-radius:4px;margin-left:5px;vertical-align:middle;letter-spacing:1px}
+        .badge.new{background:var(--pink);color:white}
+        .badge.hot{background:var(--yellow);color:#1a0a2e}
 
-/* ── VIDEO PLAYER MODAL ── */
-.modal{position:fixed;inset:0;z-index:999;background:rgba(0,0,0,.92);display:flex;align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity .3s}
-.modal.open{opacity:1;pointer-events:all}
-.modal-inner{width:100%;max-width:900px;background:var(--surface);border-radius:16px;overflow:hidden;transform:scale(.95);transition:transform .3s;margin:auto}
-.modal.open .modal-inner{transform:scale(1)}
+        /* ── VIDEO PLAYER MODAL ── */
+        .modal{position:fixed;inset:0;z-index:999;background:rgba(0,0,0,.92);display:flex;align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity .3s}
+        .modal.open{opacity:1;pointer-events:all}
+        .modal-inner{width:100%;max-width:900px;background:var(--surface);border-radius:16px;overflow:hidden;transform:scale(.95);transition:transform .3s;margin:auto}
 
-/* Player header */
-.player-head{background:var(--bg);padding:14px 18px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
-.player-ch{display:flex;align-items:center;gap:10px}
-.player-ch .av{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));display:grid;place-items:center;font-family:'Bangers',cursive;font-size:.75rem;color:white}
-.player-ch .name{font-weight:800;font-size:.9rem}
-.player-ch .handle{font-size:.75rem;color:var(--muted)}
-.close-btn{width:36px;height:36px;border-radius:50%;background:var(--surface2);border:none;color:var(--text);cursor:pointer;font-size:1.1rem;display:grid;place-items:center;transition:background .2s}
-.close-btn:hover{background:var(--border)}
+        /* Player header */
+        .player-head{background:var(--bg);padding:14px 18px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
+        .player-ch{display:flex;align-items:center;gap:10px}
+        .player-ch .av{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));display:grid;place-items:center;font-family:'Bangers',cursive;font-size:.75rem;color:white}
+        .player-ch .name{font-weight:800;font-size:.9rem}
+        .player-ch .handle{font-size:.75rem;color:var(--muted)}
+        .close-btn{width:36px;height:36px;border-radius:50%;background:var(--surface2);border:none;color:var(--text);cursor:pointer;font-size:1.1rem;display:grid;place-items:center;transition:background .2s}
+        .close-btn:hover{background:var(--border)}
 
-/* Storyboard player */
-.player-storyboard{background:#0a0a14;padding:0;position:relative}
-.sb-panel{display:none;flex-direction:column;animation:sb-in .35s ease}
-.sb-panel.active{display:flex}
-@keyframes sb-in{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
-.sb-scene{width:100%;aspect-ratio:16/9;position:relative;overflow:hidden}
-.sb-scene svg{width:100%;height:100%;display:block}
-.sb-timestamp{position:absolute;top:10px;left:10px;background:rgba(0,0,0,.8);color:#5b9cf6;font-family:'Bangers',cursive;font-size:.85rem;letter-spacing:1px;padding:3px 10px;border-radius:8px}
-.sb-emotion{position:absolute;top:10px;right:10px;background:var(--yellow);color:#1a0a2e;font-family:'Bangers',cursive;font-size:.78rem;padding:3px 10px;border-radius:8px;box-shadow:2px 2px 0 rgba(0,0,0,.3)}
-.sb-caption{background:white;padding:14px 18px;border-top:3px solid var(--pink)}
-.sb-caption .narrator{font-size:.7rem;color:var(--deep-pink);font-weight:900;font-family:'Nunito',sans-serif;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
-.sb-caption p{font-family:'Patrick Hand',cursive;font-size:1rem;color:#1a0a2e;line-height:1.55}
+        /* Storyboard player */
+        .player-storyboard{background:#0a0a14;padding:0;position:relative}
+        .sb-panel{display:none;flex-direction:column;animation:sb-in .35s ease}
+        .sb-panel.active{display:flex}
+        @keyframes sb-in{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
+        .sb-scene{width:100%;aspect-ratio:16/9;position:relative;overflow:hidden}
+        .sb-scene svg{width:100%;height:100%;display:block}
+        .sb-timestamp{position:absolute;top:10px;left:10px;background:rgba(0,0,0,.8);color:#5b9cf6;font-family:'Bangers',cursive;font-size:.85rem;letter-spacing:1px;padding:3px 10px;border-radius:8px}
+        .sb-emotion{position:absolute;top:10px;right:10px;background:var(--yellow);color:#1a0a2e;font-family:'Bangers',cursive;font-size:.78rem;padding:3px 10px;border-radius:8px;box-shadow:2px 2px 0 rgba(0,0,0,.3)}
+        .sb-caption{background:white;padding:14px 18px;border-top:3px solid var(--pink)}
+        .sb-caption .narrator{font-size:.7rem;color:var(--deep-pink);font-weight:900;font-family:'Nunito',sans-serif;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+        .sb-caption p{font-family:'Patrick Hand',cursive;font-size:1rem;color:#1a0a2e;line-height:1.55}
 
-/* Player controls */
-.player-controls{background:var(--bg);padding:12px 18px;display:flex;align-items:center;gap:12px;border-top:1px solid var(--border)}
-.ctrl-btn{background:var(--surface2);border:none;color:var(--text);border-radius:8px;padding:8px 16px;font-weight:700;font-size:.82rem;cursor:pointer;font-family:'Nunito',sans-serif;transition:all .2s;display:flex;align-items:center;gap:6px}
-.ctrl-btn:hover{background:var(--border)}
-.ctrl-btn.primary{background:var(--pink);color:white}
-.ctrl-btn.primary:hover{background:var(--deep-pink)}
-.ctrl-btn:disabled{opacity:.35;cursor:not-allowed}
-.progress-wrap{flex:1;height:6px;background:var(--surface2);border-radius:3px;cursor:pointer;position:relative;overflow:hidden}
-.progress-fill{height:100%;background:var(--pink);border-radius:3px;transition:width .3s}
-.panel-counter{font-size:.8rem;color:var(--muted);white-space:nowrap}
+        /* Player controls */
+        .player-controls{background:var(--bg);padding:12px 18px;display:flex;align-items:center;gap:12px;border-top:1px solid var(--border)}
+        .ctrl-btn{background:var(--surface2);border:none;color:var(--text);border-radius:8px;padding:8px 16px;font-weight:700;font-size:.82rem;cursor:pointer;font-family:'Nunito',sans-serif;transition:all .2s;display:flex;align-items:center;gap:6px}
+        .ctrl-btn:hover{background:var(--border)}
+        .ctrl-btn.primary{background:var(--pink);color:white}
+        .ctrl-btn.primary:hover{background:var(--deep-pink)}
+        .ctrl-btn:disabled{opacity:.35;cursor:not-allowed}
+        .progress-wrap{flex:1;height:6px;background:var(--surface2);border-radius:3px;cursor:pointer;position:relative;overflow:hidden}
+        .progress-fill{height:100%;background:var(--pink);border-radius:3px;transition:width .3s}
+        .panel-counter{font-size:.8rem;color:var(--muted);white-space:nowrap}
 
-/* Video action row */
-.vid-actions{padding:14px 18px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;border-bottom:1px solid var(--border)}
-.vid-title-big{padding:0 18px;margin-top:14px;font-family:'Bangers',cursive;font-size:1.3rem;letter-spacing:1px;line-height:1.3}
-.vid-meta-row{padding:8px 18px 14px;font-size:.8rem;color:var(--muted)}
+        /* Video action row */
+        .vid-actions{padding:14px 18px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;border-bottom:1px solid var(--border)}
+        .vid-title-big{padding:0 18px;margin-top:14px;font-family:'Bangers',cursive;font-size:1.3rem;letter-spacing:1px;line-height:1.3}
+        .vid-meta-row{padding:8px 18px 14px;font-size:.8rem;color:var(--muted)}
 
-/* Like button */
-.like-btn{background:var(--surface2);border:1px solid var(--border);border-radius:20px;padding:8px 18px;color:var(--text);cursor:pointer;font-size:.85rem;font-family:'Nunito',sans-serif;font-weight:700;transition:all .25s;display:flex;align-items:center;gap:7px;position:relative;overflow:hidden}
-.like-btn:hover{border-color:var(--pink)}
-.like-btn.liked{background:rgba(233,30,140,.15);border-color:var(--pink);color:var(--pink)}
-.like-btn .like-num{transition:all .2s}
-.like-burst{position:absolute;pointer-events:none;font-size:1.2rem;opacity:0;transform:scale(0);transition:all .4s}
-.like-burst.pop{animation:like-pop .6s ease forwards}
-@keyframes like-pop{0%{opacity:1;transform:scale(1) translateY(0)}100%{opacity:0;transform:scale(1.5) translateY(-30px)}}
+        /* Like button */
+        .like-btn{background:var(--surface2);border:1px solid var(--border);border-radius:20px;padding:8px 18px;color:var(--text);cursor:pointer;font-size:.85rem;font-family:'Nunito',sans-serif;font-weight:700;transition:all .25s;display:flex;align-items:center;gap:7px;position:relative;overflow:hidden}
+        .like-btn:hover{border-color:var(--pink)}
+        .like-btn.liked{background:rgba(233,30,140,.15);border-color:var(--pink);color:var(--pink)}
+        .like-btn .like-num{transition:all .2s}
+        .like-burst{position:absolute;pointer-events:none;font-size:1.2rem;opacity:0;transform:scale(0);transition:all .4s}
+        .like-burst.pop{animation:like-pop .6s ease forwards}
+        @keyframes like-pop{0%{opacity:1;transform:scale(1) translateY(0)}100%{opacity:0;transform:scale(1.5) translateY(-30px)}}
 
-.share-btn{background:var(--surface2);border:1px solid var(--border);border-radius:20px;padding:8px 16px;color:var(--text);cursor:pointer;font-size:.82rem;font-family:'Nunito',sans-serif;font-weight:700;transition:all .2s}
-.share-btn:hover{border-color:var(--text)}
+        .share-btn{background:var(--surface2);border:1px solid var(--border);border-radius:20px;padding:8px 16px;color:var(--text);cursor:pointer;font-size:.82rem;font-family:'Nunito',sans-serif;font-weight:700;transition:all .2s}
+        .share-btn:hover{border-color:var(--text)}
 
-/* Comments in modal */
-.modal-comments{padding:18px;border-top:1px solid var(--border)}
-.modal-comments h3{font-size:.95rem;font-weight:900;margin-bottom:14px}
-.mc{display:flex;gap:10px;margin-bottom:16px}
-.mc-av{width:32px;height:32px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;font-weight:900;font-size:.75rem;color:white}
-.mc-body{}
-.mc-name{font-weight:800;font-size:.82rem;margin-bottom:3px}
-.mc-name.creator{color:var(--pink)}
-.mc-text{font-family:'Patrick Hand',cursive;font-size:.9rem;color:var(--text);line-height:1.5}
-.mc-likes{font-size:.75rem;color:var(--muted);margin-top:5px}
+        /* Comments in modal */
+        .modal-comments{padding:18px;border-top:1px solid var(--border)}
+        .modal-comments h3{font-size:.95rem;font-weight:900;margin-bottom:14px}
+        .mc{display:flex;gap:10px;margin-bottom:16px}
+        .mc-av{width:32px;height:32px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;font-weight:900;font-size:.75rem;color:white}
+        .mc-body{}
+        .mc-name{font-weight:800;font-size:.82rem;margin-bottom:3px}
+        .mc-name.creator{color:var(--pink)}
+        .mc-text{font-family:'Patrick Hand',cursive;font-size:.9rem;color:var(--text);line-height:1.5}
+        .mc-likes{font-size:.75rem;color:var(--muted);margin-top:5px}
 
-/* ── PLAYLISTS ── */
-.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin-bottom:8px}
-.pcard{background:var(--surface);border-radius:12px;overflow:hidden;cursor:pointer;transition:all .25s}
-.pcard:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(233,30,140,.2)}
-.pthumb{width:100%;aspect-ratio:16/9;position:relative;overflow:hidden}
-.pthumb svg{width:100%;height:100%}
-.pcount{position:absolute;right:0;inset-y:0;width:32%;background:rgba(0,0,0,.8);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Bangers',cursive;font-size:1.3rem;color:white;gap:2px}
-.pcount small{font-family:'Nunito',sans-serif;font-size:.65rem;color:#aaa;font-weight:600}
-.pinfo{padding:12px 14px}
-.pname{font-weight:900;font-size:.9rem;margin-bottom:3px}
-.psub{font-size:.78rem;color:var(--muted)}
+        /* ── PLAYLISTS ── */
+        .pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin-bottom:8px}
+        .pcard{background:var(--surface);border-radius:12px;overflow:hidden;cursor:pointer;transition:all .25s}
+        .pcard:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(233,30,140,.2)}
+        .pthumb{width:100%;aspect-ratio:16/9;position:relative;overflow:hidden}
+        .pthumb svg{width:100%;height:100%}
+        .pcount{position:absolute;right:0;inset-y:0;width:32%;background:rgba(0,0,0,.8);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Bangers',cursive;font-size:1.3rem;color:white;gap:2px}
+        .pcount small{font-family:'Nunito',sans-serif;font-size:.65rem;color:#aaa;font-weight:600}
+        .pinfo{padding:12px 14px}
+        .pname{font-weight:900;font-size:.9rem;margin-bottom:3px}
+        .psub{font-size:.78rem;color:var(--muted)}
 
-/* ── COMMENTS SECTION ── */
-.comment{display:flex;gap:12px;margin-bottom:20px;animation:fade-up .5s ease both}
-@keyframes fade-up{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-.c-av{width:34px;height:34px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;font-weight:900;font-size:.75rem;color:white}
-.c-name{font-weight:800;font-size:.85rem}
-.c-name.creator{color:var(--pink)}
-.c-time{font-size:.72rem;color:var(--muted);margin-left:8px}
-.c-heart{font-size:.7rem;color:var(--pink);margin-left:5px}
-.c-text{font-family:'Patrick Hand',cursive;font-size:.92rem;line-height:1.5;margin-top:3px}
-.c-likes{font-size:.75rem;color:var(--muted);margin-top:5px;cursor:pointer}
+        /* ── COMMENTS SECTION ── */
+        .comment{display:flex;gap:12px;margin-bottom:20px;animation:fade-up .5s ease both}
+        @keyframes fade-up{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+        .c-av{width:34px;height:34px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;font-weight:900;font-size:.75rem;color:white}
+        .c-name{font-weight:800;font-size:.85rem}
+        .c-name.creator{color:var(--pink)}
+        .c-time{font-size:.72rem;color:var(--muted);margin-left:8px}
+        .c-heart{font-size:.7rem;color:var(--pink);margin-left:5px}
+        .c-text{font-family:'Patrick Hand',cursive;font-size:.92rem;line-height:1.5;margin-top:3px}
+        .c-likes{font-size:.75rem;color:var(--muted);margin-top:5px;cursor:pointer}
 
-/* ── SUBSCRIBE CONFETTI ── */
-.confetti-container{position:fixed;inset:0;pointer-events:none;z-index:9999;display:none}
-.confetti-container.active{display:block}
-.conf{position:absolute;width:10px;height:10px;border-radius:2px;animation:conf-fall linear forwards}
-@keyframes conf-fall{0%{transform:translateY(-20px) rotate(0deg);opacity:1}100%{transform:translateY(110vh) rotate(720deg);opacity:0}}
+        /* ── SUBSCRIBE CONFETTI ── */
+        .confetti-container{position:fixed;inset:0;pointer-events:none;z-index:9999;display:none}
+        .confetti-container.active{display:block}
+        .conf{position:absolute;width:10px;height:10px;border-radius:2px;animation:conf-fall linear forwards}
+        @keyframes conf-fall{0%{transform:translateY(-20px) rotate(0deg);opacity:1}100%{transform:translateY(110vh) rotate(720deg);opacity:0}}
 
-/* ── TOAST ── */
-.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--surface2);color:var(--text);border:1px solid var(--pink);border-radius:10px;padding:12px 20px;font-weight:700;font-size:.88rem;font-family:'Nunito',sans-serif;opacity:0;transition:all .3s;z-index:9999;pointer-events:none;white-space:nowrap}
-.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+        /* ── TOAST ── */
+        .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--surface2);color:var(--text);border:1px solid var(--pink);border-radius:10px;padding:12px 20px;font-weight:700;font-size:.88rem;font-family:'Nunito',sans-serif;opacity:0;transition:all .3s;z-index:9999;pointer-events:none;white-space:nowrap}
+        .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
-/* ── FOOTER ── */
-footer{background:var(--surface);border-top:1px solid var(--border);padding:20px;text-align:center;font-family:'Patrick Hand',cursive;font-size:.95rem;color:var(--muted)}
-footer span{color:var(--pink);font-weight:700}
+        /* ── FOOTER ── */
+        footer{background:var(--surface);border-top:1px solid var(--border);padding:20px;text-align:center;font-family:'Patrick Hand',cursive;font-size:.95rem;color:var(--muted)}
+        footer span{color:var(--pink);font-weight:700}
 
-@media(max-width:600px){
-  .vgrid{grid-template-columns:1fr 1fr}
-  .pgrid{grid-template-columns:1fr}
-  .ch-actions{gap:6px}
-  .vid-title-big{font-size:1.05rem}
-}
-</style>
+        @media(max-width:600px){
+            .vgrid{grid-template-columns:1fr 1fr}
+            .pgrid{grid-template-columns:1fr}
+            .ch-actions{gap:6px}
+            .vid-title-big{font-size:1.05rem}
+        }
+    </style>
 </head>
 <body>
 
@@ -251,236 +250,303 @@ footer span{color:var(--pink);font-weight:700}
 
 <!-- ── NAV ── -->
 <nav class="nav">
-  <div class="nav-logo">
-    <div class="yt-pill"></div>
-    <b>YouTube</b>
-  </div>
-  <div class="nav-search">
-    <input type="text" value="zipho and duduzile msa" readonly>
-    <button>🔍</button>
-  </div>
-  <div class="nav-avatar">D</div>
+    <div class="nav-logo">
+        <div class="yt-pill"></div>
+        <b>YouTube</b>
+    </div>
+    <div class="nav-search">
+        <input type="text" value="zipho and duduzile msa" readonly>
+        <button>🔍</button>
+    </div>
+    <div class="nav-avatar">D</div>
 </nav>
 
 <!-- ── BANNER ── -->
 <div class="banner">
-  <span class="banner-deco" style="left:4%;top:12%;animation-delay:0s">💗</span>
-  <span class="banner-deco" style="left:14%;top:55%;animation-delay:.5s;font-size:1.1rem">✨</span>
-  <span class="banner-deco" style="left:28%;top:18%;animation-delay:1s">💕</span>
-  <span class="banner-deco" style="right:6%;top:16%;animation-delay:.3s">💗</span>
-  <span class="banner-deco" style="right:18%;top:58%;animation-delay:.8s;font-size:1.1rem">⭐</span>
-  <span class="banner-deco" style="right:32%;top:22%;animation-delay:1.3s">💕</span>
-  <div class="banner-title">THE <span>ZIPHO & DUDUZILE</span> STORY</div>
+    <span class="banner-deco" style="left:4%;top:12%;animation-delay:0s">💗</span>
+    <span class="banner-deco" style="left:14%;top:55%;animation-delay:.5s;font-size:1.1rem">✨</span>
+    <span class="banner-deco" style="left:28%;top:18%;animation-delay:1s">💕</span>
+    <span class="banner-deco" style="right:6%;top:16%;animation-delay:.3s">💗</span>
+    <span class="banner-deco" style="right:18%;top:58%;animation-delay:.8s;font-size:1.1rem">⭐</span>
+    <span class="banner-deco" style="right:32%;top:22%;animation-delay:1.3s">💕</span>
+    <div class="banner-title">THE <span>ZIPHO & DUDUZILE</span> STORY</div>
 </div>
 
 <!-- ── CHANNEL ROW ── -->
 <div class="ch-row">
-  <div class="ch-avatar">Z&D</div>
-  <div class="ch-meta">
-    <div class="ch-name">The Zipho & Duduzile Story</div>
-    <div class="ch-handle">@zipho_x_duduzile • My Story Animated</div>
-    <div class="ch-stats"><b>2.4M</b> subscribers &nbsp;•&nbsp; <b>18</b> videos &nbsp;•&nbsp; <b>~4 months</b> together</div>
-    <div class="ch-actions">
-      <button class="btn-sub" id="subBtn" onclick="toggleSubscribe()">SUBSCRIBE</button>
-      <button class="btn-bell" id="bellBtn" onclick="ringBell()">🔔</button>
-      <button class="btn-join" onclick="showToast('Welcome to the fan club 💗')">Join</button>
-      <span class="sub-count" id="subCount">2,400,000 subscribers</span>
+    <div class="ch-avatar">Z&D</div>
+    <div class="ch-meta">
+        <div class="ch-name">The Zipho & Duduzile Story</div>
+        <div class="ch-handle">@zipho_x_duduzile • My Story Animated</div>
+        <div class="ch-stats"><b>2.4M</b> subscribers &nbsp;•&nbsp; <b>18</b> videos &nbsp;•&nbsp; <b>~4 months</b> together</div>
+        <div class="ch-actions">
+            <button class="btn-sub" id="subBtn" onclick="toggleSubscribe()">SUBSCRIBE</button>
+            <button class="btn-bell" id="bellBtn" onclick="ringBell()">🔔</button>
+            <button class="btn-join" onclick="showToast('Welcome to the fan club 💗')">Join</button>
+            <span class="sub-count" id="subCount">2,400,000 subscribers</span>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- ── TABS ── -->
 <div class="tabs">
-  <div class="tab active">Home</div>
-  <div class="tab">Videos</div>
-  <div class="tab">Playlists</div>
-  <div class="tab">Community</div>
-  <div class="tab">About</div>
+    <div class="tab active">Home</div>
+    <div class="tab">Videos</div>
+    <div class="tab">Playlists</div>
+    <div class="tab">Community</div>
+    <div class="tab">About</div>
 </div>
 
 <!-- ── CONTENT ── -->
 <div class="content">
 
-  <!-- PINNED POST -->
-  <div class="pin">
-    <div class="pin-head">
-      <div class="pin-av">Z&D</div>
-      <div>
-        <div class="pin-name">The Zipho & Duduzile Story ✓</div>
-        <div class="pin-time">6 days ago</div>
-      </div>
-    </div>
-    <div class="pin-body">
-      hey guys 💕 we have an important announcement...<br><br>
-      after <span class="hl">nearly 4 months</span> of long distance, surviving timezones, WiFi issues, and way too many late night calls —
-      <span class="hl">we're finally meeting in person next Tuesday.</span> 🥺<br><br>
-      we started as strangers on a Sunday morning and ended up here. i don't know how but i'm not complaining 😭💗
-    </div>
-    <div class="cdown">
-      <div class="cu"><div class="cn" id="cd-d">—</div><div class="cl">Days</div></div>
-      <div class="csep">:</div>
-      <div class="cu"><div class="cn" id="cd-h">—</div><div class="cl">Hours</div></div>
-      <div class="csep">:</div>
-      <div class="cu"><div class="cn" id="cd-m">—</div><div class="cl">Mins</div></div>
-      <div class="csep">:</div>
-      <div class="cu"><div class="cn" id="cd-s">—</div><div class="cl">Secs</div></div>
-      <div class="ctext">until we finally<br>meet 💗</div>
-    </div>
-    <div class="pin-reacts" id="pin-reacts">
-      <div class="react on" data-base="241" onclick="toggleReact(this)"><span>💗</span><span class="react-num">241K</span></div>
-      <div class="react" data-base="98" onclick="toggleReact(this)"><span>😭</span><span class="react-num">98K</span></div>
-      <div class="react" data-base="76" onclick="toggleReact(this)"><span>🥺</span><span class="react-num">76K</span></div>
-      <div class="react" data-base="54" onclick="toggleReact(this)"><span>✨</span><span class="react-num">54K</span></div>
-    </div>
-  </div>
-
-  <!-- MOST WATCHED -->
-  <div class="sec-head">
-    <div class="sec-title">🔥 MOST WATCHED</div>
-    <a class="see-all" href="#">See all →</a>
-  </div>
-  <div class="vgrid">
-
-    <div class="vcard" onclick="openVideo(0)">
-      <div class="vthumb">
-        <svg viewBox="0 0 320 180"><defs><linearGradient id="g0" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7B1FA2"/><stop offset="100%" stop-color="#E91E8C"/></linearGradient></defs><rect width="320" height="180" fill="url(#g0)"/><circle cx="20" cy="20" r="1.5" fill="white" opacity=".5"/><circle cx="280" cy="30" r="1" fill="white" opacity=".7"/><ellipse cx="95" cy="95" rx="30" ry="32" fill="#F5C5A3"/><ellipse cx="93" cy="80" rx="30" ry="19" fill="#7B1FA2"/><ellipse cx="84" cy="96" rx="9" ry="11" fill="white"/><ellipse cx="106" cy="96" rx="9" ry="11" fill="white"/><ellipse cx="84" cy="97" rx="6" ry="8" fill="#5B3FA0"/><ellipse cx="106" cy="97" rx="6" ry="8" fill="#5B3FA0"/><ellipse cx="82" cy="94" rx="2.5" ry="3" fill="white"/><ellipse cx="104" cy="94" rx="2.5" ry="3" fill="white"/><rect x="150" y="65" width="55" height="95" rx="10" fill="#212121"/><rect x="153" y="69" width="49" height="87" rx="7" fill="#E91E8C"/><text x="163" y="115" font-size="22">💬</text><text x="42" y="90" font-size="34" fill="#E91E8C" font-family="Bangers,cursive">PING!</text><line x1="55" y1="78" x2="45" y2="68" stroke="white" stroke-width="2" opacity=".8"/><line x1="50" y1="92" x2="40" y2="92" stroke="white" stroke-width="2" opacity=".8"/><rect x="0" y="138" width="320" height="42" fill="rgba(0,0,0,.65)"/><text x="10" y="157" font-size="11" fill="white" font-family="Patrick Hand,cursive" font-weight="bold">I Matched With A Stranger Online And</text><text x="10" y="174" font-size="11" fill="#FFB3C1" font-family="Patrick Hand,cursive" font-weight="bold">Now He Won't Leave My Mind 😭💔</text></svg>
-        <div class="vdur">7:49</div>
-        <div class="voverlay"><div class="vplay"></div></div>
-      </div>
-      <div class="vmeta">
-        <div class="vav">Z&D</div>
-        <div class="vinfo">
-          <div class="vtitle">I Matched With A Stranger Online And Now He Won't Leave My Mind 😭💔 <span class="badge hot">🔥 TRENDING</span></div>
-          <div class="vch">The Zipho & Duduzile Story</div>
-          <div class="vstats">2.4M views • 3 weeks ago</div>
+    <!-- PINNED POST -->
+    <div class="pin">
+        <div class="pin-head">
+            <div class="pin-av">Z&D</div>
+            <div>
+                <div class="pin-name">The Zipho & Duduzile Story ✓</div>
+                <div class="pin-time">6 days ago</div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class="vcard" onclick="openVideo(1)">
-      <div class="vthumb">
-        <svg viewBox="0 0 320 180"><rect width="320" height="180" fill="#1a0a2e"/><rect x="0" y="110" width="130" height="70" fill="#212121"/><rect x="190" y="110" width="130" height="70" fill="#212121"/><rect x="18" y="118" width="10" height="10" rx="2" fill="#FFF59D" opacity=".7"/><rect x="35" y="118" width="10" height="10" rx="2" fill="#FFF59D" opacity=".5"/><rect x="240" y="118" width="10" height="10" rx="2" fill="#FFF59D" opacity=".7"/><ellipse cx="68" cy="82" rx="22" ry="24" fill="#F5C5A3"/><ellipse cx="66" cy="68" rx="22" ry="14" fill="#212121"/><ellipse cx="248" cy="80" rx="22" ry="24" fill="#F5C5A3"/><ellipse cx="246" cy="66" rx="22" ry="14" fill="#7B1FA2"/><ellipse cx="60" cy="82" rx="7" ry="8" fill="white"/><ellipse cx="76" cy="82" rx="7" ry="8" fill="white"/><ellipse cx="60" cy="83" rx="5" ry="6" fill="#1565C0"/><ellipse cx="76" cy="83" rx="5" ry="6" fill="#1565C0"/><ellipse cx="240" cy="81" rx="7" ry="8" fill="white"/><ellipse cx="256" cy="81" rx="7" ry="8" fill="white"/><ellipse cx="240" cy="82" rx="5" ry="6" fill="#5B3FA0"/><ellipse cx="256" cy="82" rx="5" ry="6" fill="#5B3FA0"/><line x1="91" y1="82" x2="225" y2="80" stroke="#E91E8C" stroke-width="1.5" stroke-dasharray="6,5" opacity=".7"/><text x="142" y="72" font-size="18">💗</text><rect x="0" y="140" width="320" height="40" fill="rgba(0,0,0,.7)"/><text x="10" y="157" font-size="10" fill="white" font-family="Patrick Hand,cursive" font-weight="bold">We Live In Different Cities And He Still</text><text x="10" y="173" font-size="10" fill="#90CAF9" font-family="Patrick Hand,cursive" font-weight="bold">Texted Me Good Morning Every Single Day 😭</text></svg>
-        <div class="vdur">9:12</div>
-        <div class="voverlay"><div class="vplay"></div></div>
-      </div>
-      <div class="vmeta">
-        <div class="vav">Z&D</div>
-        <div class="vinfo">
-          <div class="vtitle">We Live In Different Cities And He Still Texted Me Good Morning Every Single Day 😭</div>
-          <div class="vch">The Zipho & Duduzile Story</div>
-          <div class="vstats">1.8M views • 2 weeks ago</div>
+        <div class="pin-body">
+            hey guys 💕 we have an important announcement...<br><br>
+            after <span class="hl">nearly 4 months</span> of long distance, surviving timezones, WiFi issues, and way too many late night calls — 
+            <span class="hl">we're finally meeting in person next Tuesday, the 31st.</span> 🥺<br><br>
+            we started as strangers on a Sunday morning and ended up here. i don't know how but i'm not complaining 😭💗
         </div>
-      </div>
-    </div>
-
-    <div class="vcard" onclick="openVideo(2)">
-      <div class="vthumb">
-        <svg viewBox="0 0 320 180"><rect width="320" height="180" fill="#0d0d1a"/><rect x="10" y="10" width="143" height="108" rx="8" fill="#1565C0" opacity=".2"/><rect x="163" y="10" width="147" height="108" rx="8" fill="#E91E8C" opacity=".15"/><ellipse cx="82" cy="60" rx="25" ry="27" fill="#F5C5A3"/><ellipse cx="80" cy="44" rx="25" ry="15" fill="#212121"/><polygon points="60,44 70,26 80,44" fill="#212121"/><polygon points="76,42 86,22 96,42" fill="#212121"/><ellipse cx="72" cy="60" rx="8" ry="9" fill="white"/><ellipse cx="92" cy="60" rx="8" ry="9" fill="white"/><ellipse cx="72" cy="61" rx="5" ry="6" fill="#1565C0"/><ellipse cx="92" cy="61" rx="5" ry="6" fill="#1565C0"/><path d="M67 73 Q82 81 97 73" stroke="#C0706A" stroke-width="2" fill="none"/><ellipse cx="237" cy="58" rx="25" ry="27" fill="#F5C5A3"/><ellipse cx="235" cy="42" rx="25" ry="15" fill="#7B1FA2"/><ellipse cx="227" cy="58" rx="8" ry="9" fill="white"/><ellipse cx="247" cy="58" rx="8" ry="9" fill="white"/><ellipse cx="227" cy="59" rx="5" ry="6" fill="#5B3FA0"/><ellipse cx="247" cy="59" rx="5" ry="6" fill="#5B3FA0"/><path d="M222 71 Q237 79 252 71" stroke="#C0706A" stroke-width="2" fill="none"/><ellipse cx="220" cy="64" rx="8" ry="5" fill="#FFB3C1" opacity=".5"/><ellipse cx="254" cy="64" rx="8" ry="5" fill="#FFB3C1" opacity=".5"/><rect x="110" y="5" width="100" height="16" rx="8" fill="rgba(0,0,0,.75)"/><text x="126" y="16" font-size="8" fill="#4CAF50" font-family="Bangers,cursive">● 02:34:17</text><text x="148" y="108" font-size="16">💗</text><rect x="0" y="128" width="320" height="52" fill="rgba(0,0,0,.75)"/><text x="10" y="147" font-size="10" fill="white" font-family="Patrick Hand,cursive" font-weight="bold">Our First Video Call Lasted 2 Hours And</text><text x="10" y="163" font-size="10" fill="#CE93D8" font-family="Patrick Hand,cursive" font-weight="bold">34 Minutes. Nobody Wanted To Hang Up 😭✨</text></svg>
-        <div class="vdur">8:33</div>
-        <div class="voverlay"><div class="vplay"></div></div>
-      </div>
-      <div class="vmeta">
-        <div class="vav">Z&D</div>
-        <div class="vinfo">
-          <div class="vtitle">Our First Video Call Lasted 2 Hours And 34 Minutes. Nobody Wanted To Hang Up 😭✨</div>
-          <div class="vch">The Zipho & Duduzile Story</div>
-          <div class="vstats">1.2M views • 1 week ago</div>
+        <div class="cdown">
+            <div class="cu"><div class="cn" id="cd-d">—</div><div class="cl">Days</div></div>
+            <div class="csep">:</div>
+            <div class="cu"><div class="cn" id="cd-h">—</div><div class="cl">Hours</div></div>
+            <div class="csep">:</div>
+            <div class="cu"><div class="cn" id="cd-m">—</div><div class="cl">Mins</div></div>
+            <div class="csep">:</div>
+            <div class="cu"><div class="cn" id="cd-s">—</div><div class="cl">Secs</div></div>
+            <div class="ctext">until we finally<br>meet 💗</div>
         </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- SEASON 2 -->
-  <div class="sec-head">
-    <div class="sec-title">📺 SEASON 2 — THE LONG DISTANCE ERA</div>
-    <a class="see-all" href="#">See all →</a>
-  </div>
-  <div class="vgrid">
-
-    <div class="vcard" onclick="openVideo(3)">
-      <div class="vthumb">
-        <svg viewBox="0 0 320 180"><rect width="320" height="180" fill="#1a0a2e"/><circle cx="90" cy="85" r="54" fill="#212121"/><circle cx="90" cy="85" r="48" fill="#1a1a2e"/><text x="66" y="78" font-size="8" fill="#aaa" font-family="Nunito">HIS TIME</text><text x="58" y="96" font-size="16" fill="#FDD835" font-family="Bangers">02:47</text><text x="64" y="110" font-size="8" fill="#666">AM 😴</text><circle cx="230" cy="85" r="54" fill="#212121"/><circle cx="230" cy="85" r="48" fill="#1a1a2e"/><text x="204" y="78" font-size="8" fill="#aaa" font-family="Nunito">HER TIME</text><text x="198" y="96" font-size="16" fill="#E91E8C" font-family="Bangers">11:47</text><text x="204" y="110" font-size="8" fill="#666">PM 😊</text><text x="147" y="90" font-size="22">⚡</text><rect x="0" y="145" width="320" height="35" fill="rgba(0,0,0,.75)"/><text x="8" y="160" font-size="10" fill="white" font-family="Patrick Hand,cursive" font-weight="bold">The Timezone Is Our Villain And We Are</text><text x="8" y="176" font-size="10" fill="#90CAF9" font-family="Patrick Hand,cursive" font-weight="bold">Both Losing 😭 (Long Distance Ep. 1)</text></svg>
-        <div class="vdur">10:05</div>
-        <div class="voverlay"><div class="vplay"></div></div>
-      </div>
-      <div class="vmeta">
-        <div class="vav">Z&D</div>
-        <div class="vinfo">
-          <div class="vtitle">The Timezone Is Our Villain And We Are Both Losing 😭 (Long Distance Ep. 1)</div>
-          <div class="vch">The Zipho & Duduzile Story</div>
-          <div class="vstats">890K views • 2 months ago</div>
+        <div class="pin-reacts" id="pin-reacts">
+            <div class="react on" data-base="241" onclick="toggleReact(this)"><span>💗</span><span class="react-num">241K</span></div>
+            <div class="react" data-base="98" onclick="toggleReact(this)"><span>😭</span><span class="react-num">98K</span></div>
+            <div class="react" data-base="76" onclick="toggleReact(this)"><span>🥺</span><span class="react-num">76K</span></div>
+            <div class="react" data-base="54" onclick="toggleReact(this)"><span>✨</span><span class="react-num">54K</span></div>
         </div>
-      </div>
     </div>
 
-    <div class="vcard" onclick="openVideo(4)">
-      <div class="vthumb">
-        <svg viewBox="0 0 320 180"><rect width="320" height="180" fill="#fce4f5"/><rect x="55" y="20" width="80" height="145" rx="12" fill="#212121"/><rect x="59" y="25" width="72" height="135" rx="9" fill="#1a237e"/><rect x="185" y="20" width="80" height="145" rx="12" fill="#212121"/><rect x="189" y="25" width="72" height="135" rx="9" fill="#3a0a4e"/><rect x="63" y="38" width="60" height="18" rx="8" fill="#E91E8C"/><text x="69" y="50" font-size="8" fill="white" font-family="Patrick Hand">good morning 💕</text><rect x="63" y="62" width="55" height="18" rx="8" fill="#E91E8C"/><text x="69" y="74" font-size="8" fill="white" font-family="Patrick Hand">thinking of u</text><rect x="63" y="86" width="62" height="18" rx="8" fill="#E91E8C"/><text x="69" y="98" font-size="8" fill="white" font-family="Patrick Hand">call me? 🥺</text><rect x="193" y="38" width="60" height="18" rx="8" fill="#7B1FA2"/><text x="199" y="50" font-size="8" fill="white" font-family="Patrick Hand">hii!! 💗</text><rect x="193" y="62" width="60" height="18" rx="8" fill="#7B1FA2"/><text x="199" y="74" font-size="8" fill="white" font-family="Patrick Hand">same 😭</text><rect x="193" y="86" width="60" height="18" rx="8" fill="#7B1FA2"/><text x="199" y="98" font-size="8" fill="white" font-family="Patrick Hand">yes!! 🥺</text><text x="146" y="88" font-size="18">💗</text><rect x="0" y="148" width="320" height="32" fill="rgba(0,0,0,.6)"/><text x="8" y="162" font-size="10" fill="white" font-family="Patrick Hand,cursive" font-weight="bold">He Texts Me Every Morning. Without Fail. 😭</text><text x="8" y="177" font-size="10" fill="#FFB3C1" font-family="Patrick Hand,cursive" font-weight="bold">(Long Distance Ep. 2)</text></svg>
-        <div class="vdur">8:17</div>
-        <div class="voverlay"><div class="vplay"></div></div>
-      </div>
-      <div class="vmeta">
-        <div class="vav">Z&D</div>
-        <div class="vinfo">
-          <div class="vtitle">He Texts Me Every Single Morning. Without Fail. 😭 (Long Distance Ep. 2)</div>
-          <div class="vch">The Zipho & Duduzile Story</div>
-          <div class="vstats">760K views • 6 weeks ago</div>
+    <!-- MOST WATCHED -->
+    <div class="sec-head">
+        <div class="sec-title">🔥 MOST WATCHED</div>
+        <a class="see-all" href="#">See all →</a>
+    </div>
+    <div class="vgrid">
+
+        <div class="vcard" onclick="openVideo(0)">
+            <div class="vthumb">
+                <svg viewBox="0 0 320 180"><defs><linearGradient id="g0" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7B1FA2"/><stop offset="100%" stop-color="#E91E8C"/></linearGradient></defs><rect width="320" height="180" fill="url(#g0)"/><circle cx="20" cy="20" r="1.5" fill="white" opacity=".5"/><circle cx="280" cy="30" r="1" fill="white" opacity=".7"/><ellipse cx="95" cy="95" rx="30" ry="32" fill="#F5C5A3"/><ellipse cx="93" cy="80" rx="30" ry="19" fill="#7B1FA2"/><ellipse cx="84" cy="96" rx="9" ry="11" fill="white"/><ellipse cx="106" cy="96" rx="9" ry="11" fill="white"/><ellipse cx="84" cy="97" rx="6" ry="8" fill="#5B3FA0"/><ellipse cx="106" cy="97" rx="6" ry="8" fill="#5B3FA0"/><ellipse cx="82" cy="94" rx="2.5" ry="3" fill="white"/><ellipse cx="104" cy="94" rx="2.5" ry="3" fill="white"/><rect x="150" y="65" width="55" height="95" rx="10" fill="#212121"/><rect x="153" y="69" width="49" height="87" rx="7" fill="#E91E8C"/><text x="163" y="115" font-size="22">💬</text><text x="42" y="90" font-size="34" fill="#E91E8C" font-family="Bangers,cursive">PING!</text><line x="55" y="78" x2="45" y="68" stroke="white" stroke-width="2" opacity=".8"/><line x="50" y="92" x2="40" y="92" stroke="white" stroke-width="2" opacity=".8"/><rect x="0" y="138" width="320" height="42" fill="rgba(0,0,0,.65)"/><text x="10" y="157" font-size="11" fill="white" font-family="Patrick Hand,cursive" font-weight="bold">I Matched With A Stranger Online And</text><text x="10" y="174" font-size="11" fill="#FFB3C1" font-family="Patrick Hand,cursive" font-weight="bold">Now She Won't Leave My Mind 😭💔</text></svg>
+                <div class="vdur">7:49</div>
+                <div class="voverlay"><div class="vplay"></div></div>
+            </div>
+            <div class="vmeta">
+                <div class="vav">Z&D</div>
+                <div class="vinfo">
+                    <div class="vtitle">I Matched With A Stranger Online And Now She Won't Leave My Mind 😭💔 <span class="badge hot">🔥 TRENDING</span></div>
+                    <div class="vch">The Zipho & Duduzile Story</div>
+                    <div class="vstats">2.4M views • 3 weeks ago</div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="vcard" onclick="openVideo(5)">
-      <div class="vthumb">
-        <svg viewBox="0 0 320 180"><defs><linearGradient id="gm" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a0a2e"/><stop offset="100%" stop-color="#4a0a6e"/></linearGradient></defs><rect width="320" height="180" fill="url(#gm)"/><rect x="80" y="15" width="160" height="140" rx="10" fill="#212121"/><rect x="80" y="15" width="160" height="36" rx="10" fill="#E91E8C"/><rect x="80" y="38" width="160" height="13" fill="#E91E8C"/><text x="116" y="36" font-size="13" fill="white" font-family="Bangers">MARCH 2026</text><text x="88" y="68" font-size="9" fill="#aaa" font-family="Nunito">M  T  W  T  F  S  S</text><text x="88" y="82" font-size="9" fill="white" font-family="Nunito">2  3  4  5  6  7  8</text><text x="88" y="96" font-size="9" fill="white" font-family="Nunito">9  10 11 12 13 14 15</text><text x="88" y="110" font-size="9" fill="white" font-family="Nunito">16 17 18 19 20 21 22</text><text x="88" y="124" font-size="9" fill="white" font-family="Nunito">23 </text><circle cx="120" cy="120" r="11" fill="#E91E8C"/><text x="115" y="124" font-size="9" fill="white" font-family="Nunito" font-weight="bold">24</text><text x="133" y="124" font-size="9" fill="white" font-family="Nunito"> 25 26 27 28 29</text><rect x="0" y="0" width="320" height="18" fill="rgba(0,0,0,.5)"/><text x="8" y="13" font-size="8" fill="#FDD835" font-family="Patrick Hand,cursive" font-weight="bold">WE'RE FINALLY MEETING NEXT TUESDAY 😭💗</text></svg>
-        <div class="vdur">12:44</div>
-        <div class="voverlay"><div class="vplay"></div></div>
-      </div>
-      <div class="vmeta">
-        <div class="vav">Z&D</div>
-        <div class="vinfo">
-          <div class="vtitle">WE ARE FINALLY MEETING IN PERSON NEXT TUESDAY 😭💗✨ <span class="badge new">NEW</span></div>
-          <div class="vch">The Zipho & Duduzile Story</div>
-          <div class="vstats">341K views • 1 day ago</div>
+        <div class="vcard" onclick="openVideo(1)">
+            <div class="vthumb">
+                <svg viewBox="0 0 320 180"><rect width="320" height="180" fill="#1a0a2e"/><rect x="0" y="110" width="130" height="70" fill="#212121"/><rect x="190" y="110" width="130" height="70" fill="#212121"/><rect x="18" y="118" width="10" height="10" rx="2" fill="#FFF59D" opacity=".7"/><rect x="35" y="118" width="10" height="10" rx="2" fill="#FFF59D" opacity=".5"/><rect x="240" y="118" width="10" height="10" rx="2" fill="#FFF59D" opacity=".7"/><ellipse cx="68" cy="82" rx="22" ry="24" fill="#F5C5A3"/><ellipse cx="66" cy="68" rx="22" ry="14" fill="#212121"/><ellipse cx="248" cy="80" rx="22" ry="24" fill="#F5C5A3"/><ellipse cx="246" cy="66" rx="22" ry="14" fill="#7B1FA2"/><ellipse cx="60" cy="82" rx="7" ry="8" fill="white"/><ellipse cx="76" cy="82" rx="7" ry="8" fill="white"/><ellipse cx="60" cy="83" rx="5" ry="6" fill="#1565C0"/><ellipse cx="76" cy="83" rx="5" ry="6" fill="#1565C0"/><ellipse cx="240" cy="81" rx="7" ry="8" fill="white"/><ellipse cx="256" cy="81" rx="7" ry="8" fill="white"/><ellipse cx="240" cy="82" rx="5" ry="6" fill="#5B3FA0"/><ellipse cx="256" cy="82" rx="5" ry="6" fill="#5B3FA0"/><line x1="91" y1="82" x2="225" y2="80" stroke="#E91E8C" stroke-width="1.5" stroke-dasharray="6,5" opacity=".7"/><text x="142" y="72" font-size="18">💗</text><rect x="0" y="140" width="320" height="40" fill="rgba(0,0,0,.7)"/><text x="10" y="157" font-size="10" fill="white" font-family="Patrick Hand,cursive" font-weight="bold">We Live In Different Cities And She Still</text><text x="10" y="173" font-size="10" fill="#90CAF9" font-family="Patrick Hand,cursive" font-weight="bold">Texted Me Good Morning Every Single Day 😭</text></svg>
+                <div class="vdur">9:12</div>
+                <div class="voverlay"><div class="vplay"></div></div>
+            </div>
+            <div class="vmeta">
+                <div class="vav">Z&D</div>
+                <div class="vinfo">
+                    <div class="vtitle">We Live In Different Cities And She Texted Me Good Morning Every Single Day 😭</div>
+                    <div class="vch">The Zipho & Duduzile Story</div>
+                    <div class="vstats">1.8M views • 2 weeks ago</div>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="vcard" onclick="openVideo(2)">
+            <div class="vthumb">
+                <svg viewBox="0 0 320 180"><rect width="320" height="180" fill="#0d0d1a"/><rect x="10" y="10" width="143" height="108" rx="8" fill="#1565C0" opacity=".2"/><rect x="163" y="10" width="147" height="108" rx="8" fill="#E91E8C" opacity=".15"/><ellipse cx="82" cy="60" rx="25" ry="27" fill="#F5C5A3"/><ellipse cx="80" cy="44" rx="25" ry="15" fill="#212121"/><polygon points="60,44 70,26 80,44" fill="#212121"/><polygon points="76,42 86,22 96,42" fill="#212121"/><ellipse cx="72" cy="60" rx="8" ry="9" fill="white"/><ellipse cx="92" cy="60" rx="8" ry="9" fill="white"/><ellipse cx="72" cy="61" rx="5" ry="6" fill="#1565C0"/><ellipse cx="92" cy="61" rx="5" ry="6" fill="#1565C0"/><path d="M67 73 Q82 81 97 73" stroke="#C0706A" stroke-width="2" fill="none"/><ellipse cx="237" cy="58" rx="25" ry="27" fill="#F5C5A3"/><ellipse cx="235" cy="42" rx="25" ry="15" fill="#7B1FA2"/><ellipse cx="227" cy="58" rx="8" ry="9" fill="white"/><ellipse cx="247" cy="58" rx="8" ry="9" fill="white"/><ellipse cx="227" cy="59" rx="5" ry="6" fill="#5B3FA0"/><ellipse cx="247" cy="59" rx="5" ry="6" fill="#5B3FA0"/><path d="M222 71 Q237 79 252 71" stroke="#C0706A" stroke-width="2" fill="none"/><ellipse cx="220" cy="64" rx="25" ry="25" fill="#FFB3C1" opacity=".5"/><ellipse cx="254" cy="64" rx="25" ry="25" fill="#FFB3C1" opacity=".5"/><rect x="110" y="5" width="100" height="16" rx="8" fill="rgba(0,0,0,.75)"/><text x="126" y="16" font-size="8" fill="#4CAF50" font-family="Bangers,cursive">● 02:34:17</text><text x="148" y="108" font-size="16">💗</text><rect x="0" y="128" width="320" height="52" fill="rgba(0,0,0,.75)"/><text x="10" y="147" font-size="10" fill="white" font-family="Patrick Hand",cursive font-weight="bold">Our First Video Call Lasted 2 Hours And</text><text x="10" y="163" font-size="10" fill="#CE93D8" font-family="Patrick Hand",cursive font-weight="bold">34 Minutes. Nobody Wanted To Hang Up 😭✨</text></svg>
+                <div class="vdur">8:33</div>
+                <div class="voverlay"><div class="vplay"></div></div>
+            </div>
+            <div class="vmeta">
+                <div class="vav">Z&D</div>
+                <div class="vinfo">
+                    <div class="vtitle">Our First Video Call Lasted 2 Hours And 34 Minutes. Nobody Wanted To Hang Up 😭✨</div>
+                    <div class="vch">The Zipho & Duduzile Story</div>
+                    <div class="vstats">1.2M views • 1 week ago</div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-  </div>
-
-  <!-- PLAYLISTS -->
-  <div class="sec-head">
-    <div class="sec-title">🎬 PLAYLISTS</div>
-    <a class="see-all" href="#">See all →</a>
-  </div>
-  <div class="pgrid">
-    <div class="pcard" onclick="showToast('Season 1: The Sunday Arc — 6 episodes 💗')">
-      <div class="pthumb"><svg viewBox="0 0 320 180"><rect width="320" height="180" fill="#7B1FA2"/><text x="24" y="100" font-size="26" fill="white" font-family="Bangers" opacity=".85">THE SUNDAY ARC</text><text x="24" y="128" font-size="15" fill="#CE93D8" font-family="Patrick Hand">Season 1 • Origin Story</text><text x="55" y="64" font-size="42">💗</text></svg><div class="pcount">6<br><small>videos</small></div></div>
-      <div class="pinfo"><div class="pname">Season 1 — The Sunday Arc</div><div class="psub">How it all started • 6 videos • 52 min</div></div>
+    <!-- SEASON 2 -->
+    <div class="sec-head">
+        <div class="sec-title">📺 SEASON 2 — THE LONG DISTANCE ERA</div>
+        <a class="see-all" href="#">See all →</a>
     </div>
-    <div class="pcard" onclick="showToast('Season 2: Long Distance Era — 8 episodes 🌍')">
-      <div class="pthumb"><svg viewBox="0 0 320 180"><rect width="320" height="180" fill="#1565C0"/><text x="18" y="90" font-size="22" fill="white" font-family="Bangers" opacity=".85">LONG DISTANCE ERA</text><text x="18" y="118" font-size="14" fill="#90CAF9" font-family="Patrick Hand">Season 2 • The Grind</text><text x="50" y="58" font-size="40">🌍</text><text x="100" y="58" font-size="28">💕</text></svg><div class="pcount">8<br><small>videos</small></div></div>
-      <div class="pinfo"><div class="pname">Season 2 — The Long Distance Era</div><div class="psub">Timezones are the villain • 8 videos • 78 min</div></div>
-    </div>
-    <div class="pcard" onclick="showToast('Best Moments — 12 videos for 2am feelings 💕')">
-      <div class="pthumb"><svg viewBox="0 0 320 180"><rect width="320" height="180" fill="#1a0a2e"/><circle cx="160" cy="72" r="45" fill="#E91E8C" opacity=".18"/><text x="98" y="88" font-size="42">🥺💗</text><text x="28" y="132" font-size="20" fill="white" font-family="Bangers" opacity=".85">BEST MOMENTS</text><text x="28" y="154" font-size="13" fill="#CE93D8" font-family="Patrick Hand">Comfort playlist for when you miss them</text></svg><div class="pcount">12<br><small>videos</small></div></div>
-      <div class="pinfo"><div class="pname">Best Moments 💗</div><div class="psub">For when you miss them at 2am • 12 videos</div></div>
-    </div>
-  </div>
+    <div class="vgrid">
 
-  <!-- COMMENTS -->
-  <div class="sec-head" style="margin-top:8px">
-    <div class="sec-title">💬 TOP COMMENTS</div>
-  </div>
-  <div class="comment" style="animation-delay:.1s"><div class="c-av" style="background:#E91E8C">S</div><div><div><span class="c-name">@softgirlera_nia</span><span class="c-time">3 weeks ago</span></div><div class="c-text">the way she said "sure :)" when she absolutely was NOT sure 😭😭 the bravery of it all</div><div class="c-likes">👍 41K &nbsp; Reply</div></div></div>
-  <div class="comment" style="animation-delay:.2s"><div class="c-av" style="background:#1565C0">K</div><div><div><span class="c-name">@realtalk_with_kofi</span><span class="c-time">3 weeks ago</span></div><div class="c-text">bro zipho really woke up one sunday and chose violence 😭 "let me ruin this girl's entire life trajectory real quick"</div><div class="c-likes">👍 28K &nbsp; Reply</div></div></div>
-  <div class="comment" style="animation-delay:.3s"><div class="c-av" style="background:#9C27B0">A</div><div><div><span class="c-name">@anonymous_viewer_2847</span><span class="c-time">2 weeks ago</span></div><div class="c-text">the timezone episode broke me. both of them pretending they're not tired. both staying on the call anyway 😭</div><div class="c-likes">👍 19K &nbsp; Reply</div></div></div>
-  <div class="comment" style="animation-delay:.4s"><div class="c-av" style="background:linear-gradient(135deg,#E91E8C,#7B1FA2)">D</div><div><div><span class="c-name creator">@duduzile_irl</span><span class="c-time">1 day ago</span><span class="c-heart">❤️</span></div><div class="c-text">I don't know this channel and none of this has ever happened to me 😇</div><div class="c-likes">👍 98K &nbsp; Reply</div></div></div>
-  <div class="comment" style="animation-delay:.5s"><div class="c-av" style="background:#1565C0">Z</div><div><div><span class="c-name creator">@zipho_irl</span><span class="c-time">1 day ago</span><span class="c-heart">❤️</span></div><div class="c-text">😇 <br><em style="font-size:.78rem;color:var(--muted)">(she liked this comment)</em></div><div class="c-likes">👍 87K &nbsp; Reply</div></div></div>
+        <div class="vcard" onclick="openVideo(3)">
+            <div class="vthumb">
+                <svg viewBox="0 0 320 180"><rect width="320" height="180" fill="#1a0a2e"/><circle cx="90" cy="85" r="54" fill="#212121"/><circle cx="90" cy="85" r="48" fill="#1a1a2e"/><text x="66" y="78" font-size="8" fill="#aaa" font-family="Nunito">HER TIME</text><text x="58" y="96" font-size="16" fill="#FDD835" font-family="Bangers">02:47</text><text x="64" y="110" font-size="8" fill="#666">AM 😴</text><circle cx="230" cy="85" r="54" fill="#212121"/><circle cx="230" cy="85" r="48" fill="#1a1a2e"/><text x="204" y="78" font-size="8" fill="#aaa" font-family="Nunito">HIS TIME</text><text x="198" y="96" font-size="16" fill="#E91E8C" font-family="Bangers">11:47</text><text x="204" y="110" font-size="8" fill="#666">PM 😊</text><text x="147" y="90" font-size="22">⚡</text><rect x="0" y="145" width="320" height="35" fill="rgba(0,0,0,.75)"/><text x="8" y="160" font-size="10" fill="white" font-family="Patrick Hand",cursive font-weight="bold">The Timezone Is Our Villain And We Are</text><text x="8" y="176" font-size="10" fill="#90CAF9" font-family="Patrick Hand",cursive font-weight="bold">Both Losing 😭 (Long Distance Ep. 1)</text></svg>
+                <div class="vdur">10:05</div>
+                <div class="voverlay"><div class="vplay"></div></div>
+            </div>
+            <div class="vmeta">
+                <div class="vav">Z&D</div>
+                <div class="vinfo">
+                    <div class="vtitle">The Timezone Is Our Villain And We Are Both Losing 😭 (Long Distance Ep. 1)</div>
+                    <div class="vch">The Zipho & Duduzile Story</div>
+                    <div class="vstats">890K views • 2 months ago</div>
+                </div>
+            </div>
+        </div>
 
+        <div class="vcard" onclick="openVideo(4)">
+            <div class="vthumb">
+                <svg viewBox="0 0 320 180"><rect width="320" height="180" fill="#fce4f5"/><rect x="55" y="20" width="80" height="145" rx="12" fill="#212121"/><rect x="59" y="25" width="72" height="135" rx="9" fill="#1a237e"/><rect x="185" y="20" width="80" height="145" rx="12" fill="#212121"/><rect x="189" y="25" width="72" height="135" rx="9" fill="#3a0a4e"/><rect x="63" y="38" width="60" height="18" rx="8" fill="#E91E8C"/><text x="69" y="50" font-size="8" fill="white" font-family="Patrick Hand">good morning 💕</text><rect x="63" y="62" width="55" height="18" rx="8" fill="#E91E8C"/><text x="69" y="74" font-size="8" fill="white" font-family="Patrick Hand">thinking of u</text><rect x="63" y="86" width="62" height="18" rx="8" fill="#E91E8C"/><text x="69" y="98" font-size="8" fill="white" font-family="Patrick Hand">call me? 🥺</text><rect x="193" y="38" width="60" height="18" rx="8" fill="#7B1FA2"/><text x="199" y="50" font-size="8" fill="white" font-family="Patrick Hand">hii!! 💗</text><rect x="193" y="62" width="60" height="18" rx="8" fill="#7B1FA2"/><text x="199" y="74" font-size="8" fill="white" font-family="Patrick Hand">same 😭</text><rect x="193" y="86" width="60" height="18" rx="8" fill="#7B1FA2"/><text x="199" y="98" font-size="8" fill="white" font-family="Patrick Hand">yes!! 🥺</text><text x="146" y="88" font-size="18">💗</text><rect x="0" y="148" width="320" height="32" fill="rgba(0,0,0,.6)"/><text x="8" y="162" font-size="10" fill="white" font-family="Patrick Hand",cursive font-weight="bold">He Texts Me Every Morning. Without Fail. 😭</text><text x="8" y="177" font-size="10" fill="#FFB3C1" font-family="Patrick Hand",cursive font-weight="bold">(Long Distance Ep. 2)</text></svg>
+                <div class="vdur">8:17</div>
+                <div class="voverlay"><div class="vplay"></div></div>
+            </div>
+            <div class="vmeta">
+                <div class="vav">Z&D</div>
+                <div class="vinfo">
+                    <div class="vtitle">He Texts Me Every Single Morning. Without Fail. 😭 (Long Distance Ep. 2)</div>
+                    <div class="vch">The Zipho & Duduzile Story</div>
+                    <div class="vstats">760K views • 6 weeks ago</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="vcard" onclick="openVideo(5)">
+            <div class="vthumb">
+                <svg viewBox="0 0 320 180"><defs><linearGradient id="gm" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a0a2e"/><stop offset="100%" stop-color="#4a0a6e"/></linearGradient></defs><rect width="320" height="180" fill="url(#gm)"/><rect x="80" y="15" width="160" height="140" rx="10" fill="#212121"/><rect x="80" y="15" width="160" height="36" rx="10" fill="#E91E8C"/><rect x="80" y="38" width="160" height="13" fill="#E91E8C"/><text x="116" y="36" font-size="13" fill="white" font-family="Bangers">MARCH 2026</text><text x="88" y="68" font-size="9" fill="#aaa" font-family="Nunito">M  T  W  T  F  S  S</text><text x="88" y="82" font-size="9" fill="white" font-family="Nunito">2  3  4  5  6  7  8</text><text x="88" y="96" font-size="9" fill="white" font-family="Nunito">9  10 11 12 13 14 15</text><text x="88" y="110" font-size="9" fill="white" font-family="Nunito">16 17 18 19 20 21 22</text><text x="88" y="124" font-size="9" fill="white" font-family="Nunito">23 </text><circle cx="120" cy="120" r="11" fill="#E91E8C"/><text x="115" y="124" font-size="9" fill="white" font-family="Nunito" font-weight="bold">24</text><text x="133" y="124" font-size="9" fill="white" font-family="Nunito"> 25 26 27 28 29</text><rect x="0" y="0" width="320" height="18" fill="rgba(0,0,0,.5)"/><text x="8" y="13" font-size="8" fill="#FDD835" font-family="Patrick Hand",cursive font-weight="bold">WE'RE FINALLY MEETING NEXT TUESDAY 😭💗</text></svg>
+                <div class="vdur">12:44</div>
+                <div class="voverlay"><div class="vplay"></div></div>
+            </div>
+            <div class="vmeta">
+                <div class="vav">Z&D</div>
+                <div class="vinfo">
+                    <div class="vtitle">WE ARE FINALLY MEETING IN PERSON NEXT TUESDAY 😭💗✨ <span class="badge new">NEW</span></div>
+                    <div class="vch">The Zipho & Duduzile Story</div>
+                    <div class="vstats">341K views • 1 day ago</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PLAYLISTS -->
+    <div class="sec-head">
+        <div class="sec-title">🎬 PLAYLISTS</div>
+        <a class="see-all" href="#">See all →</a>
+    </div>
+    <div class="pgrid">
+        <div class="pcard" onclick="showToast('Season 1: The Sunday Arc — 6 episodes 💗')">
+            <div class="pthumb"><svg viewBox="0 0 320 180"><rect width="320" height="180" fill="#7B1FA2"/><text x="24" y="100" font-size="26" fill="white" font-family="Bangers" opacity=".85">THE SUNDAY ARC</text><text x="24" y="128" font-size="15" fill="#CE93D8" font-family="Patrick Hand">Season 1 • Origin Story</text><text x="55" y="64" font-size="42">💗</text></svg><div class="pcount">6<br><small>videos</small></div></div>
+            <div class="pinfo">
+                <div class="pname">Season 1 — The Sunday Arc</div>
+                <div class="psub">How it all started • 6 videos • 52 min</div>
+            </div>
+        </div>
+        <div class="pcard" onclick="showToast('Season 2: Long Distance Era — 8 episodes 🌍')">
+            <div class="pthumb"><svg viewBox="0 0 320 180"><rect width="320" height="180" fill="#1565C0"/><text x="18" y="90" font-size="22" fill="white" font-family="Bangers" opacity=".85">LONG DISTANCE ERA</text><text x="18" y="118" font-size="14" fill="#90CAF9" font-family="Patrick Hand">Season 2 • The Grind</text><text x="50" y="58" font-size="40">🌍</text><text x="100" y="58" font-size="28">💕</text></svg><div class="pcount">8<br><small>videos</small></div></div>
+            <div class="pinfo">
+                <div class="pname">Season 2 — The Long Distance Era</div>
+                <div class="psub">Timezones are the villain • 8 videos • 78 min</div>
+            </div>
+        </div>
+        <div class="pcard" onclick="showToast('Best Moments — 12 videos for 2am feelings 💕')">
+            <div class="pthumb"><svg viewBox="0 0 320 180"><rect width="320" height="180" fill="#1a0a2e"/><circle cx="160" cy="72" r="45" fill="#E91E8C" opacity=".18"/><text x="98" y="88" font-size="42">🥺💗</text><text x="28" y="132" font-size="20" fill="white" font-family="Bangers" opacity=".85">BEST MOMENTS</text><text x="28" y="154" font-size="13" fill="#CE93D8" font-family="Patrick Hand">Comfort playlist for when you miss them</text></svg><div class="pcount">12<br><small>videos</small></div></div>
+            <div class="pinfo">
+                <div class="pname">Best Moments 💗</div>
+                <div class="psub">For when you miss them at 2am • 12 videos</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COMMENTS SECTION -->
+    <div class="sec-head" style="margin-top:8px">
+        <div class="sec-title">💬 TOP COMMENTS</div>
+    </div>
+    <div class="comment" style="animation-delay:.1s">
+        <div class="c-av" style="background:#E91E8C">S</div>
+        <div>
+            <div><span class="c-name">@softgirlera_nia</span><span class="c-time">3 weeks ago</span></div>
+            <div class="c-text">the way she said "sure :)" when she absolutely was NOT sure 😭😭 the bravery of it all</div>
+            <div class="c-likes">👍 41K &nbsp; Reply</div>
+        </div>
+    </div>
+    <div class="comment" style="animation-delay:.2s">
+        <div class="c-av" style="background:#1565C0">K</div>
+        <div>
+            <div><span class="c-name">@realtalk_with_kofi</span><span class="c-time">3 weeks ago</span></div>
+            <div class="c-text">bro zipho really woke up one sunday and chose violence 😭 "let me ruin this girl's entire life trajectory real quick"</div>
+            <div class="c-likes">👍 28K &nbsp; Reply</div>
+        </div>
+    </div>
+    <div class="comment" style="animation-delay:.3s">
+        <div class="c-av" style="background:#9C27B0">A</div>
+        <div>
+            <div><span class="c-name">@anonymous_viewer_2847</span><span class="c-time">2 weeks ago</span></div>
+            <div class="c-text">the timezone episode broke me. both of them pretending they're not tired. both staying on the call anyway 😭</div>
+            <div class="c-likes">👍 19K &nbsp; Reply</div>
+        </div>
+    </div>
+    <div class="comment" style="animation-delay:.4s">
+        <div class="c-av" style="background:linear-gradient(135deg,#E91E8C,#7B1FA2)">D</div>
+        <div>
+            <div><span class="c-name creator">@duduzile_irl</span><span class="c-time">1 day ago</span><span class="c-heart">❤️</span></div>
+            <div class="c-text">I don't know this channel and none of this has ever happened to me 😇</div>
+            <div class="c-likes">👍 98K &nbsp; Reply</div>
+        </div>
+    </div>
+    <div class="comment" style="animation-delay:.5s">
+        <div class="c-av" style="background:#1565C0">Z</div>
+        <div>
+            <div><span class="c-name creator">@zipho_irl</span><span class="c-time">1 day ago</span><span class="c-heart">❤️</span></div>
+            <div class="c-text">😇 <br><em style="font-size:.78rem;color:var(--muted)">(she liked this comment)</em></div>
+            <div class="c-likes">👍 87K &nbsp; Reply</div>
+        </div>
+    </div>
+    <div class="comment" style="animation-delay:.6s">
+        <div class="c-av" style="background:#E91E8C">K</div>
+        <div>
+            <div><span class="c-name">@anotherfan</span><span class="c-time">1 day ago</span></div>
+            <div class="c-text">I can't wait for them to meet! The story is so relatable! 💕</div>
+            <div class="c-likes">👍 20K &nbsp; Reply</div>
+        </div>
+    </div>
+    <div class="comment" style="animation-delay:.7s">
+        <div class="c-av" style="background:#1565C0">F</div>
+        <div>
+            <div><span class="c-name">@fanofzipho</span><span class="c-time">2 days ago</span></div>
+            <div class="c-text">Their connection is so genuine, I love this! 😍</div>
+            <div class="c-likes">👍 15K &nbsp; Reply</div>
+        </div>
+    </div>
+    <div class="comment" style="animation-delay:.8s">
+        <div class="c-av" style="background:#9C27B0">J</div>
+        <div>
+            <div><span class="c-name">@journeyfan</span><span class="c-time">2 days ago</span></div>
+            <div class="c-text">This series has been such a feel-good experience! 💗 Can't wait for more!</div>
+            <div class="c-likes">👍 5K &nbsp; Reply</div>
+        </div>
+    </div>
 </div>
 
-<footer>Made with 💗 by <span>Zipho</span> for <span style="color:var(--lpurple)">Duduzile</span> &nbsp;•&nbsp; Nearly 4 months strong &nbsp;•&nbsp; Meeting Tuesday 🥺</footer>
+<footer>Made with 💗 by <span>Zipho</span> for <span style="color:var(--lpurple)">Duduzile</span> &nbsp;•&nbsp; Nearly 4 months strong &nbsp;•&nbsp; Meeting Tuesday 31st 🥺</footer>
 
 <!-- ════════════════════════════════════════
      VIDEO PLAYER MODAL
@@ -538,7 +604,7 @@ footer span{color:var(--pink);font-weight:700}
 // ════════════════════════════
 const VIDEOS = [
   {
-    title: 'I Matched With A Stranger Online And Now He Won\'t Leave My Mind 😭💔',
+    title: 'I Matched With A Stranger Online And Now She Won\'t Leave My Mind 😭💔',
     stats: '2.4M views • 3 weeks ago',
     likes: 241000,
     panels: [
@@ -546,341 +612,4 @@ const VIDEOS = [
       caption: 'Before all this happened, I was just a normal girl. Living a normal life. On a perfectly normal Sunday morning. I was minding my business. I want that on record.' },
       { bg: '#0f0f0f', ts: '1:04', emotion: 'LIFE CHANGING 📱', scene: `<svg viewBox="0 0 640 360"><rect width="640" height="360" fill="#0d0d1a"/><circle cx="50" cy="30" r="2" fill="white" opacity=".8"/><circle cx="580" cy="50" r="2" fill="white" opacity=".6"/><circle cx="320" cy="20" r="2.5" fill="white" opacity=".9"/><rect x="270" y="40" width="100" height="175" rx="16" fill="#212121"/><rect x="276" y="47" width="88" height="161" rx="11" fill="#1a237e"/><rect x="280" y="72" width="80" height="56" rx="8" fill="#E91E8C"/><text x="305" y="106" font-size="36">💬</text><text x="148" y="160" font-size="60" fill="#E91E8C" font-family="Bangers,cursive" opacity=".9">PING!</text><ellipse cx="130" cy="260" rx="58" ry="52" fill="#F5C5A3"/><ellipse cx="127" cy="232" rx="58" ry="34" fill="#7B1FA2"/><path d="M113 260 Q128 254 143 260" stroke="#5B3FA0" stroke-width="3.5" fill="none"/><path d="M116 267 Q128 262 140 267" stroke="#5B3FA0" stroke-width="3" fill="none"/><text x="180" y="228" font-size="28" fill="#9C27B0" font-family="Bangers">zz</text><text x="168" y="248" font-size="42">→</text><ellipse cx="510" cy="258" rx="58" ry="52" fill="#F5C5A3"/><ellipse cx="507" cy="230" rx="58" ry="34" fill="#7B1FA2"/><ellipse cx="494" cy="258" rx="17" ry="19" fill="white"/><ellipse cx="526" cy="258" rx="17" ry="19" fill="white"/><ellipse cx="494" cy="260" rx="12" ry="14" fill="#5B3FA0"/><ellipse cx="526" cy="260" rx="12" ry="14" fill="#5B3FA0"/><ellipse cx="490" cy="255" rx="4" ry="5" fill="white"/><ellipse cx="522" cy="255" rx="4" ry="5" fill="white"/><line x1="460" y1="232" x2="448" y2="220" stroke="#E91E8C" stroke-width="3"/><line x1="452" y1="248" x2="440" y2="248" stroke="#E91E8C" stroke-width="3"/><line x1="558" y1="232" x2="570" y2="220" stroke="#E91E8C" stroke-width="3"/><line x1="566" y1="248" x2="578" y2="248" stroke="#E91E8C" stroke-width="3"/><ellipse cx="510" cy="278" rx="12" ry="8" fill="#c0706a"/></svg>`,
       caption: 'And then. The notification. One single message that had absolutely no business arriving on a Sunday morning and changing everything.' },
-      { bg: '#fff9c4', ts: '5:01', emotion: 'GONE 💗', scene: `<svg viewBox="0 0 640 360"><rect width="640" height="360" fill="#fffde7"/><rect width="640" height="160" fill="#f5f5f5"/><circle cx="320" cy="32" r="30" fill="#FDD835"/><circle cx="320" cy="32" r="22" fill="#FFF9C4"/><ellipse cx="320" cy="255" rx="180" ry="95" fill="#CE93D8"/><ellipse cx="320" cy="240" rx="72" ry="76" fill="#F5C5A3"/><ellipse cx="317" cy="208" rx="74" ry="44" fill="#7B1FA2"/><ellipse cx="296" cy="244" rx="22" ry="26" fill="white"/><ellipse cx="344" cy="244" rx="22" ry="26" fill="white"/><ellipse cx="296" cy="246" rx="16" ry="20" fill="#5B3FA0"/><ellipse cx="344" cy="246" rx="16" ry="20" fill="#5B3FA0"/><text x="285" y="242" font-size="12">★</text><text x="334" y="242" font-size="12">★</text><path d="M280 272 Q320 294 360 272" stroke="#C0706A" stroke-width="4.5" fill="#FFB3C1"/><ellipse cx="256" cy="258" rx="26" ry="16" fill="#FFB3C1" opacity=".7"/><ellipse cx="384" cy="258" rx="26" ry="16" fill="#FFB3C1" opacity=".7"/><text x="100" y="165" font-size="42">💗</text><text x="430" y="148" font-size="36">💕</text><text x="220" y="130" font-size="28">💗</text><text x="490" y="180" font-size="22">💕</text><text x="80" y="130" font-size="18">✨</text><text x="545" y="135" font-size="18">⭐</text></svg>`,
-      caption: 'The call ended. I put down my phone. And then I just... smiled at my ceiling. Like an absolute idiot. For a very long time. I regret nothing.' },
-      { bg: '#1a0a2e', ts: '7:14', emotion: 'THE FEELING 💗', scene: `<svg viewBox="0 0 640 360"><defs><radialGradient id="rg" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#4a0a6e"/><stop offset="100%" stop-color="#1a0a2e"/></radialGradient></defs><rect width="640" height="360" fill="url(#rg)"/><circle cx="60" cy="30" r="2" fill="white" opacity=".9"/><circle cx="580" cy="50" r="2" fill="white" opacity=".7"/><circle cx="320" cy="22" r="2.5" fill="white" opacity=".8"/><circle cx="180" cy="55" r="1.5" fill="white" opacity=".6"/><circle cx="470" cy="40" r="1.5" fill="white" opacity=".7"/><ellipse cx="320" cy="175" rx="55" ry="48" fill="#E91E8C" opacity=".12"/><ellipse cx="320" cy="175" rx="82" ry="72" fill="#E91E8C" opacity=".07"/><text x="272" y="195" font-size="80">💗</text><ellipse cx="175" cy="185" rx="88" ry="94" fill="#6A1B9A"/><rect x="140" y="255" width="70" height="85" rx="14" fill="#E91E8C"/><rect x="163" y="245" width="22" height="20" fill="#F5C5A3"/><ellipse cx="175" cy="195" rx="72" ry="78" fill="#F5C5A3"/><ellipse cx="173" cy="163" rx="72" ry="48" fill="#7B1FA2"/><ellipse cx="160" cy="200" rx="20" ry="22" fill="white"/><ellipse cx="190" cy="200" rx="20" ry="22" fill="white"/><ellipse cx="160" cy="202" rx="14" ry="17" fill="#5B3FA0"/><ellipse cx="190" cy="202" rx="14" ry="17" fill="#5B3FA0"/><ellipse cx="157" cy="197" rx="5" ry="6" fill="white"/><ellipse cx="187" cy="197" rx="5" ry="6" fill="white"/><path d="M148 222 Q175 238 202 222" stroke="#C0706A" stroke-width="4.5" fill="none" stroke-linecap="round"/><ellipse cx="140" cy="210" rx="20" ry="13" fill="#FFB3C1" opacity=".6"/><ellipse cx="210" cy="210" rx="20" ry="13" fill="#FFB3C1" opacity=".6"/><ellipse cx="465" cy="185" rx="88" ry="90" fill="#1a1a2e"/><polygon points="428,175 443,146 458,175" fill="#212121"/><polygon points="452,170 467,138 482,170" fill="#212121"/><polygon points="474,175 487,148 500,175" fill="#212121"/><rect x="432" y="255" width="66" height="85" rx="14" fill="#1565C0"/><rect x="453" y="245" width="22" height="20" fill="#F5C5A3"/><ellipse cx="465" cy="192" rx="72" ry="78" fill="#F5C5A3"/><ellipse cx="462" cy="160" rx="70" ry="44" fill="#212121"/><ellipse cx="452" cy="192" rx="20" ry="22" fill="white"/><ellipse cx="478" cy="192" rx="20" ry="22" fill="white"/><ellipse cx="452" cy="194" rx="14" ry="17" fill="#1565C0"/><ellipse cx="478" cy="194" rx="14" ry="17" fill="#1565C0"/><ellipse cx="449" cy="189" rx="5" ry="6" fill="white"/><ellipse cx="475" cy="189" rx="5" ry="6" fill="white"/><path d="M440 208 Q465 224 490 208" stroke="#C0706A" stroke-width="4.5" fill="none" stroke-linecap="round"/><text x="240" y="100" font-size="26">💕</text><text x="390" y="88" font-size="22">💕</text><text x="110" y="125" font-size="32">💗</text><text x="530" y="120" font-size="32">💗</text></svg>`,
-      caption: '"I don\'t know what this is. I don\'t know what we are. But I know that Sunday morning changed something — and I haven\'t been the same since." 💕' }
-    ],
-    comments: [
-      { name: '@softgirlera_nia', col: '#E91E8C', text: '"she smiled at her ceiling like an idiot" SCREAMING this is literally me 😭😭', likes: '14K' },
-      { name: '@realtalk_with_kofi', col: '#1565C0', text: 'bro zipho really said let me ruin this woman\'s Sunday for the rest of her life 😭', likes: '9.2K' },
-      { name: '@duduzile_irl', col: 'linear-gradient(135deg,#E91E8C,#7B1FA2)', text: 'I don\'t know this person and this has never happened to me 😇 ❤️', likes: '41K', creator: true }
-    ]
-  },
-  {
-    title: 'We Live In Different Cities And He Still Texted Me Good Morning Every Single Day 😭',
-    stats: '1.8M views • 2 weeks ago',
-    likes: 189000,
-    panels: [
-      { bg: '#1a0a2e', ts: '0:30', emotion: 'TWO WORLDS 🌍', scene: `<svg viewBox="0 0 640 360"><defs><linearGradient id="ng" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a0a2e"/><stop offset="100%" stop-color="#2a0a3e"/></linearGradient></defs><rect width="640" height="360" fill="url(#ng)"/><circle cx="570" cy="55" r="36" fill="#FFF9C4"/><circle cx="584" cy="44" r="28" fill="#1a0a2e"/><circle cx="50" cy="30" r="2" fill="white" opacity=".8"/><circle cx="580" cy="110" r="1.5" fill="white" opacity=".6"/><circle cx="200" cy="25" r="2" fill="white" opacity=".9"/><circle cx="380" cy="35" r="1.5" fill="white" opacity=".7"/><rect x="0" y="220" width="200" height="140" fill="#212121"/><rect x="440" y="220" width="200" height="140" fill="#212121"/><rect x="220" y="270" width="200" height="90" fill="#1a1a2e"/><rect x="20" y="228" width="10" height="12" rx="2" fill="#FFF59D" opacity=".7"/><rect x="40" y="228" width="10" height="12" rx="2" fill="#FFF59D" opacity=".5"/><rect x="460" y="232" width="10" height="12" rx="2" fill="#FFF59D" opacity=".7"/><ellipse cx="130" cy="160" rx="48" ry="52" fill="#F5C5A3"/><ellipse cx="127" cy="132" rx="48" ry="30" fill="#212121"/><polygon points="98,140 114,108 130,140" fill="#212121"/><polygon points="120,134 136,100 152,134" fill="#212121"/><ellipse cx="118" cy="160" rx="14" ry="16" fill="white"/><ellipse cx="142" cy="160" rx="14" ry="16" fill="white"/><ellipse cx="118" cy="162" rx="10" ry="12" fill="#1565C0"/><ellipse cx="142" cy="162" rx="10" ry="12" fill="#1565C0"/><ellipse cx="115" cy="158" rx="4" ry="4.5" fill="white"/><ellipse cx="139" cy="158" rx="4" ry="4.5" fill="white"/><path d="M108 180 Q130 192 152 180" stroke="#C0706A" stroke-width="3.5" fill="none"/><ellipse cx="510" cy="158" rx="48" ry="52" fill="#F5C5A3"/><ellipse cx="507" cy="130" rx="48" ry="30" fill="#7B1FA2"/><ellipse cx="498" cy="158" rx="14" ry="16" fill="white"/><ellipse cx="522" cy="158" rx="14" ry="16" fill="white"/><ellipse cx="498" cy="160" rx="10" ry="12" fill="#5B3FA0"/><ellipse cx="522" cy="160" rx="10" ry="12" fill="#5B3FA0"/><ellipse cx="495" cy="156" rx="4" ry="4.5" fill="white"/><ellipse cx="519" cy="156" rx="4" ry="4.5" fill="white"/><path d="M488 178 Q510 190 532 178" stroke="#C0706A" stroke-width="3.5" fill="none"/><ellipse cx="490" cy="166" rx="13" ry="8" fill="#FFB3C1" opacity=".5"/><ellipse cx="530" cy="166" rx="13" ry="8" fill="#FFB3C1" opacity=".5"/><line x1="178" y1="160" x2="460" y2="158" stroke="#E91E8C" stroke-width="2.5" stroke-dasharray="10,8" opacity=".65"/><text x="294" y="140" font-size="34">💗</text><text x="270" y="165" font-size="20">💕</text><text x="334" y="162" font-size="20">💕</text></svg>`,
-      caption: 'We were in two different cities. Two different time zones. Two different lives. And somehow that dotted line between us got shorter every single day.' },
-      { bg: '#fce4f5', ts: '3:10', emotion: 'EVERY DAY 📱', scene: `<svg viewBox="0 0 640 360"><rect width="640" height="360" fill="#fce4f5"/><rect x="120" y="40" width="160" height="280" rx="22" fill="#212121"/><rect x="127" y="48" width="146" height="264" rx="16" fill="#1a237e"/><rect x="360" y="40" width="160" height="280" rx="22" fill="#212121"/><rect x="367" y="48" width="146" height="264" rx="16" fill="#3a0a4e"/><rect x="133" y="72" width="118" height="34" rx="14" fill="#E91E8C"/><text x="145" y="93" font-size="15" fill="white" font-family="Patrick Hand">good morning 💕</text><rect x="133" y="114" width="108" height="34" rx="14" fill="#E91E8C"/><text x="145" y="135" font-size="15" fill="white" font-family="Patrick Hand">thinking of you</text><rect x="133" y="156" width="120" height="34" rx="14" fill="#E91E8C"/><text x="145" y="177" font-size="15" fill="white" font-family="Patrick Hand">can we call later? 🥺</text><rect x="373" y="72" width="118" height="34" rx="14" fill="#7B1FA2"/><text x="385" y="93" font-size="15" fill="white" font-family="Patrick Hand">hii!! 💗</text><rect x="373" y="114" width="118" height="34" rx="14" fill="#7B1FA2"/><text x="385" y="135" font-size="15" fill="white" font-family="Patrick Hand">same 😭</text><rect x="373" y="156" width="118" height="34" rx="14" fill="#7B1FA2"/><text x="385" y="177" font-size="15" fill="white" font-family="Patrick Hand">yes!! 🥺</text><line x1="280" y1="180" x2="360" y2="180" stroke="#E91E8C" stroke-width="2" stroke-dasharray="6,4"/><text x="295" y="165" font-size="28">💗</text><ellipse cx="200" cy="30" rx="32" ry="34" fill="#F5C5A3"/><ellipse cx="198" cy="12" rx="32" ry="20" fill="#212121"/><ellipse cx="188" cy="31" rx="10" ry="11" fill="white"/><ellipse cx="212" cy="31" rx="10" ry="11" fill="white"/><ellipse cx="188" cy="32" rx="7" ry="8" fill="#1565C0"/><ellipse cx="212" cy="32" rx="7" ry="8" fill="#1565C0"/><path d="M183 44 Q200 52 217 44" stroke="#C0706A" stroke-width="2.5" fill="none"/><ellipse cx="440" cy="30" rx="32" ry="34" fill="#F5C5A3"/><ellipse cx="438" cy="12" rx="32" ry="20" fill="#7B1FA2"/><ellipse cx="428" cy="31" rx="10" ry="11" fill="white"/><ellipse cx="452" cy="31" rx="10" ry="11" fill="white"/><ellipse cx="428" cy="32" rx="7" ry="8" fill="#5B3FA0"/><ellipse cx="452" cy="32" rx="7" ry="8" fill="#5B3FA0"/><path d="M423 44 Q440 52 457 44" stroke="#C0706A" stroke-width="2.5" fill="none"/><ellipse cx="422" cy="26" rx="10" ry="7" fill="#FFB3C1" opacity=".6"/><ellipse cx="458" cy="26" rx="10" ry="7" fill="#FFB3C1" opacity=".6"/></svg>`,
-      caption: 'Every morning. Every night. Without fail. I tried not to check my phone first thing. I checked my phone first thing.' }
-    ],
-    comments: [
-      { name: '@philosophybyaccident', col: '#F57C00', text: 'the distance is literally losing 😭 4 months of this and they\'re both still going strong', likes: '15K' },
-      { name: '@zipho_irl', col: '#1565C0', text: '😇', likes: '87K', creator: true }
-    ]
-  },
-  {
-    title: 'Our First Video Call Lasted 2 Hours And 34 Minutes. Nobody Wanted To Hang Up 😭✨',
-    stats: '1.2M views • 1 week ago',
-    likes: 134000,
-    panels: [
-      { bg: '#e8eaf6', ts: '1:15', emotion: 'PANICKING 😱', scene: `<svg viewBox="0 0 640 360"><rect width="640" height="360" fill="#e8eaf6"/><rect x="230" y="18" width="180" height="300" rx="10" fill="#90CAF9"/><rect x="237" y="24" width="166" height="288" rx="8" fill="#e3f2fd"/><ellipse cx="320" cy="168" rx="62" ry="68" fill="#F5C5A3" opacity=".75"/><ellipse cx="316" cy="136" rx="62" ry="40" fill="#7B1FA2" opacity=".75"/><ellipse cx="130" cy="258" rx="68" ry="74" fill="#F5C5A3"/><ellipse cx="126" cy="224" rx="68" ry="44" fill="#6A1B9A"/><ellipse cx="110" cy="262" rx="22" ry="26" fill="white"/><ellipse cx="150" cy="262" rx="22" ry="26" fill="white"/><ellipse cx="110" cy="264" rx="15" ry="19" fill="#5B3FA0"/><ellipse cx="150" cy="264" rx="15" ry="19" fill="#5B3FA0"/><ellipse cx="107" cy="260" rx="5" ry="6" fill="white"/><ellipse cx="147" cy="260" rx="5" ry="6" fill="white"/><ellipse cx="166" cy="244" rx="10" ry="16" fill="#90CAF9"/><line x1="72" y1="230" x2="60" y2="218" stroke="#E91E8C" stroke-width="3"/><line x1="64" y1="250" x2="52" y2="250" stroke="#E91E8C" stroke-width="3"/><rect x="430" y="60" width="170" height="110" rx="12" fill="white"/><polygon points="430,98 416,108 432,104" fill="white"/><text x="440" y="93" font-size="16" fill="#E91E8C" font-family="Patrick Hand,cursive">he said "wanna</text><text x="440" y="115" font-size="16" fill="#E91E8C" font-family="Patrick Hand,cursive">video call?" 😭😭</text><text x="440" y="145" font-size="24">😭😱</text></svg>`,
-      caption: 'He suggested a video call. My immediate reaction: full-body panic. My actual response: "sure :)" — I said it like a normal person who was not dying inside.' },
-      { bg: '#0d0d1a', ts: '4:11', emotion: 'THE CALL 📹', scene: `<svg viewBox="0 0 640 360"><rect width="640" height="360" fill="#0d0d1a"/><rect x="18" y="18" width="294" height="230" rx="14" fill="#1565C0" opacity=".2"/><rect x="328" y="18" width="294" height="230" rx="14" fill="#E91E8C" opacity=".15"/><ellipse cx="165" cy="130" rx="60" ry="65" fill="#F5C5A3"/><ellipse cx="162" cy="98" rx="58" ry="36" fill="#212121"/><polygon points="120,106 138,72 158,106" fill="#212121"/><polygon points="150,100 168,64 188,100" fill="#212121"/><ellipse cx="148" cy="130" rx="18" ry="20" fill="white"/><ellipse cx="182" cy="130" rx="18" ry="20" fill="white"/><ellipse cx="148" cy="132" rx="13" ry="15" fill="#1565C0"/><ellipse cx="182" cy="132" rx="13" ry="15" fill="#1565C0"/><ellipse cx="145" cy="128" rx="5" ry="5.5" fill="white"/><ellipse cx="179" cy="128" rx="5" ry="5.5" fill="white"/><path d="M138 155 Q165 170 192 155" stroke="#C0706A" stroke-width="3.5" fill="none" stroke-linecap="round"/><rect x="22" y="230" width="100" height="14" rx="4" fill="rgba(0,0,0,.8)"/><text x="28" y="241" font-size="10" fill="white" font-family="Nunito">Zipho</text><ellipse cx="475" cy="128" rx="60" ry="65" fill="#F5C5A3"/><ellipse cx="472" cy="96" rx="58" ry="36" fill="#7B1FA2"/><ellipse cx="458" cy="128" rx="18" ry="20" fill="white"/><ellipse cx="492" cy="128" rx="18" ry="20" fill="white"/><ellipse cx="458" cy="130" rx="13" ry="15" fill="#5B3FA0"/><ellipse cx="492" cy="130" rx="13" ry="15" fill="#5B3FA0"/><ellipse cx="455" cy="126" rx="5" ry="5.5" fill="white"/><ellipse cx="489" cy="126" rx="5" ry="5.5" fill="white"/><path d="M448 153 Q475 168 502 153" stroke="#C0706A" stroke-width="3.5" fill="none" stroke-linecap="round"/><ellipse cx="450" cy="140" rx="16" ry="10" fill="#FFB3C1" opacity=".5"/><ellipse cx="500" cy="140" rx="16" ry="10" fill="#FFB3C1" opacity=".5"/><rect x="334" y="228" width="120" height="14" rx="4" fill="rgba(0,0,0,.8)"/><text x="340" y="239" font-size="10" fill="white" font-family="Nunito">Duduzile</text><rect x="220" y="10" width="200" height="20" rx="10" fill="rgba(0,0,0,.75)"/><text x="262" y="23" font-size="10" fill="#4CAF50" font-family="Bangers,cursive">● 02:34:17</text><text x="288" y="285" font-size="30">💗</text><text x="310" y="310" font-size="22">✨</text></svg>`,
-      caption: 'The First Video Call. He saw my face. I saw his. Neither of us disconnected. The call lasted 2 hours and 34 minutes. Not that anyone was counting.' }
-    ],
-    comments: [
-      { name: '@just_here_4drama', col: '#9C27B0', text: 'nobody wanted to hang up = they were both just sitting there vibing for 2 hours 😭 i love them', likes: '7.8K' },
-      { name: '@duduzile_irl', col: 'linear-gradient(135deg,#E91E8C,#7B1FA2)', text: 'this channel does not exist 😇', likes: '55K', creator: true }
-    ]
-  },
-  {
-    title: 'The Timezone Is Our Villain And We Are Both Losing 😭 (Long Distance Ep. 1)',
-    stats: '890K views • 2 months ago',
-    likes: 92000,
-    panels: [
-      { bg: '#1a0a2e', ts: '2:00', emotion: 'VILLAIN ⚡', scene: `<svg viewBox="0 0 640 360"><rect width="640" height="360" fill="#1a0a2e"/><circle cx="160" cy="165" r="110" fill="#212121"/><circle cx="160" cy="165" r="98" fill="#1a1a2e"/><circle cx="160" cy="165" r="92" fill="none" stroke="#3d3d3d" stroke-width="2"/><text x="116" y="148" font-size="14" fill="#aaa" font-family="Nunito">HIS TIMEZONE</text><text x="100" y="178" font-size="36" fill="#FDD835" font-family="Bangers">02:47 AM</text><text x="118" y="210" font-size="14" fill="#666">he should be sleeping</text><circle cx="480" cy="165" r="110" fill="#212121"/><circle cx="480" cy="165" r="98" fill="#1a1a2e"/><circle cx="480" cy="165" r="92" fill="none" stroke="#3d3d3d" stroke-width="2"/><text x="432" y="148" font-size="14" fill="#aaa" font-family="Nunito">HER TIMEZONE</text><text x="416" y="178" font-size="36" fill="#E91E8C" font-family="Bangers">11:47 PM</text><text x="432" y="210" font-size="14" fill="#666">she should also sleep</text><text x="294" y="180" font-size="42">⚡</text><text x="296" y="140" font-size="18" fill="#E91E8C">but they won't</text></svg>`,
-      caption: 'His time: 2:47am. Her time: 11:47pm. Both of them claiming they\'re "not even tired." Both of them lying. Both of them still on the call.' }
-    ],
-    comments: [
-      { name: '@anonymous_viewer_2847', col: '#9C27B0', text: 'the timezone episode broke me. both pretending they\'re fine. both staying on anyway 😭', likes: '19K' },
-      { name: '@zipho_irl', col: '#1565C0', text: 'i was completely fine and fully awake 😇', likes: '44K', creator: true }
-    ]
-  },
-  {
-    title: 'He Texts Me Every Single Morning. Every Single One. Without Fail. 😭 (LD Ep. 2)',
-    stats: '760K views • 6 weeks ago',
-    likes: 78000,
-    panels: [
-      { bg: '#fce4f5', ts: '1:30', emotion: 'WITHOUT FAIL 📬', scene: `<svg viewBox="0 0 640 360"><rect width="640" height="360" fill="#fce4f5"/><text x="50" y="100" font-size="22" fill="#E91E8C" font-family="Bangers,cursive">MON</text><text x="160" y="100" font-size="22" fill="#E91E8C" font-family="Bangers,cursive">TUE</text><text x="270" y="100" font-size="22" fill="#E91E8C" font-family="Bangers,cursive">WED</text><text x="390" y="100" font-size="22" fill="#E91E8C" font-family="Bangers,cursive">THU</text><text x="500" y="100" font-size="22" fill="#E91E8C" font-family="Bangers,cursive">FRI</text><text x="34" y="175" font-size="15" fill="#1a0a2e" font-family="Patrick Hand">good morning 💕</text><text x="148" y="175" font-size="15" fill="#1a0a2e" font-family="Patrick Hand">good morning 💕</text><text x="258" y="175" font-size="15" fill="#1a0a2e" font-family="Patrick Hand">good morning 💕</text><text x="374" y="175" font-size="15" fill="#1a0a2e" font-family="Patrick Hand">good morning 💕</text><text x="484" y="175" font-size="15" fill="#1a0a2e" font-family="Patrick Hand">good morning 💕</text><rect x="28" y="118" width="100" height="44" rx="10" fill="#E91E8C" opacity=".15"/><rect x="138" y="118" width="100" height="44" rx="10" fill="#E91E8C" opacity=".15"/><rect x="248" y="118" width="100" height="44" rx="10" fill="#E91E8C" opacity=".15"/><rect x="368" y="118" width="100" height="44" rx="10" fill="#E91E8C" opacity=".15"/><rect x="478" y="118" width="100" height="44" rx="10" fill="#E91E8C" opacity=".15"/><text x="220" y="270" font-size="55" fill="#E91E8C" font-family="Bangers,cursive">WITHOUT FAIL.</text><text x="260" y="320" font-size="22" fill="#9C27B0" font-family="Patrick Hand,cursive">every. single. morning. 😭</text></svg>`,
-      caption: 'Every morning. No exceptions. No skips. No "I forgot." Every morning without fail — a message waiting when she woke up.' }
-    ],
-    comments: [
-      { name: '@softgirlera_nia', col: '#E91E8C', text: '"without fail" has me in TEARS the dedication 😭💗', likes: '22K' },
-      { name: '@duduzile_irl', col: 'linear-gradient(135deg,#E91E8C,#7B1FA2)', text: 'this is fictional 😇', likes: '71K', creator: true }
-    ]
-  },
-  {
-    title: 'WE ARE FINALLY MEETING IN PERSON NEXT TUESDAY 😭💗✨',
-    stats: '341K views • 1 day ago',
-    likes: 341000,
-    panels: [
-      { bg: '#1a0a2e', ts: '0:05', emotion: 'THE ANNOUNCEMENT 📢', scene: `<svg viewBox="0 0 640 360"><defs><radialGradient id="ag" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#4a0a6e"/><stop offset="100%" stop-color="#1a0a2e"/></radialGradient></defs><rect width="640" height="360" fill="url(#ag)"/><circle cx="60" cy="30" r="2" fill="white" opacity=".8"/><circle cx="580" cy="40" r="2" fill="white" opacity=".7"/><circle cx="300" cy="18" r="2.5" fill="white" opacity=".9"/><rect x="160" y="40" width="320" height="280" rx="14" fill="#212121"/><rect x="160" y="40" width="320" height="52" rx="14" fill="#E91E8C"/><rect x="160" y="78" width="320" height="14" fill="#E91E8C"/><text x="228" y="72" font-size="20" fill="white" font-family="Bangers">MARCH 2026</text><text x="172" y="116" font-size="14" fill="#aaa" font-family="Nunito">Mon Tue Wed Thu Fri Sat Sun</text><text x="172" y="140" font-size="13" fill="white" font-family="Nunito">                              1</text><text x="172" y="160" font-size="13" fill="white" font-family="Nunito"> 2   3   4   5   6   7   8</text><text x="172" y="180" font-size="13" fill="white" font-family="Nunito"> 9  10  11  12  13  14  15</text><text x="172" y="200" font-size="13" fill="white" font-family="Nunito">16  17  18  19  20  21  22</text><text x="172" y="220" font-size="13" fill="white" font-family="Nunito">23 </text><circle cx="228" cy="216" r="18" fill="#E91E8C"/><text x="220" y="220" font-size="13" fill="white" font-family="Nunito" font-weight="bold"> 24</text><text x="252" y="220" font-size="13" fill="white" font-family="Nunito">  25  26  27  28  29</text><text x="228" y="214" font-size="10">💗</text><rect x="168" y="240" width="304" height="32" rx="8" fill="rgba(233,30,140,.2)"/><text x="190" y="261" font-size="14" fill="#FDD835" font-family="Bangers">THE DAY IS CIRCLED. IT'S HAPPENING. 😭</text></svg>`,
-      caption: 'After nearly 4 months of long distance — the call finally came. Next Tuesday. They\'re meeting. In person. For the first time. 💗' },
-      { bg: '#fce4f5', ts: '8:30', emotion: 'FINALLY 🥺💗', scene: `<svg viewBox="0 0 640 360"><defs><radialGradient id="fg" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#fce4f5"/><stop offset="100%" stop-color="#e1bee7"/></radialGradient></defs><rect width="640" height="360" fill="url(#fg)"/><text x="100" y="60" font-size="22" fill="#E91E8C" font-family="Bangers,cursive" opacity=".5">💗</text><text x="510" y="80" font-size="28" fill="#7B1FA2" font-family="Bangers,cursive" opacity=".5">💕</text><text x="55" y="180" font-size="18" fill="#E91E8C" font-family="Bangers,cursive" opacity=".4">✨</text><text x="570" y="200" font-size="18" fill="#9C27B0" font-family="Bangers,cursive" opacity=".4">⭐</text><ellipse cx="195" cy="215" rx="95" ry="100" fill="#6A1B9A"/><rect x="155" y="290" width="80" height="68" rx="14" fill="#E91E8C"/><rect x="175" y="278" width="24" height="20" fill="#F5C5A3"/><ellipse cx="195" cy="222" rx="78" ry="84" fill="#F5C5A3"/><ellipse cx="193" cy="186" rx="78" ry="50" fill="#7B1FA2"/><ellipse cx="178" cy="228" rx="22" ry="24" fill="white"/><ellipse cx="212" cy="228" rx="22" ry="24" fill="white"/><ellipse cx="178" cy="230" rx="16" ry="18" fill="#5B3FA0"/><ellipse cx="212" cy="230" rx="16" ry="18" fill="#5B3FA0"/><ellipse cx="175" cy="226" rx="6" ry="7" fill="white"/><ellipse cx="209" cy="226" rx="6" ry="7" fill="white"/><path d="M163 252 Q195 270 227 252" stroke="#C0706A" stroke-width="5" fill="none" stroke-linecap="round"/><ellipse cx="155" cy="240" rx="22" ry="14" fill="#FFB3C1" opacity=".65"/><ellipse cx="235" cy="240" rx="22" ry="14" fill="#FFB3C1" opacity=".65"/><rect x="115" y="286" width="34" height="54" rx="14" fill="#F5C5A3" transform="rotate(22 132 313)"/><rect x="246" y="286" width="34" height="54" rx="14" fill="#F5C5A3" transform="rotate(-22 263 313)"/><ellipse cx="445" cy="215" rx="95" ry="96" fill="#1a1a2e"/><polygon points="408,194 424,158 440,194" fill="#212121"/><polygon points="432,188 448,150 464,188" fill="#212121"/><polygon points="454,194 468,162 482,194" fill="#212121"/><rect x="405" y="290" width="80" height="68" rx="14" fill="#1565C0"/><rect x="425" y="278" width="24" height="20" fill="#F5C5A3"/><ellipse cx="445" cy="220" rx="78" ry="84" fill="#F5C5A3"/><ellipse cx="442" cy="184" rx="76" ry="48" fill="#212121"/><ellipse cx="428" cy="224" rx="22" ry="24" fill="white"/><ellipse cx="462" cy="224" rx="22" ry="24" fill="white"/><ellipse cx="428" cy="226" rx="16" ry="18" fill="#1565C0"/><ellipse cx="462" cy="226" rx="16" ry="18" fill="#1565C0"/><ellipse cx="425" cy="222" rx="6" ry="7" fill="white"/><ellipse cx="459" cy="222" rx="6" ry="7" fill="white"/><path d="M413 248 Q445 266 477 248" stroke="#C0706A" stroke-width="5" fill="none" stroke-linecap="round"/><rect x="365" y="283" width="34" height="54" rx="14" fill="#F5C5A3" transform="rotate(22 382 310)"/><rect x="496" y="283" width="34" height="54" rx="14" fill="#F5C5A3" transform="rotate(-22 513 310)"/><text x="290" y="160" font-size="52">💗</text><text x="265" y="200" font-size="26">💕</text><text x="350" y="195" font-size="26">💕</text><text x="120" y="120" font-size="34">💗</text><text x="540" y="115" font-size="34">💗</text></svg>`,
-      caption: 'Nearly 4 months of long distance. Nearly 4 months of good morning texts, late night calls, and smiling at ceilings. And now — they\'re finally meeting. 💗 To be continued...' }
-    ],
-    comments: [
-      { name: '@realtalk_with_kofi', col: '#1565C0', text: 'THEY\'RE FINALLY MEETING 😭😭 4 months of suffering and NOW THIS', likes: '38K' },
-      { name: '@softgirlera_nia', col: '#E91E8C', text: 'i have been here since episode 1 and i am SOBBING 😭💗', likes: '29K' },
-      { name: '@duduzile_irl', col: 'linear-gradient(135deg,#E91E8C,#7B1FA2)', text: 'still don\'t know what channel this is 😇💗', likes: '120K', creator: true },
-      { name: '@zipho_irl', col: '#1565C0', text: '😇', likes: '98K', creator: true }
-    ]
-  }
-];
-
-// ════════════════════════════
-// STATE
-// ════════════════════════════
-let currentVideo = null;
-let currentPanel = 0;
-let likedVideos = {};
-let subbed = false;
-let subCount = 2400000;
-
-// ════════════════════════════
-// PLAYER
-// ════════════════════════════
-function openVideo(idx) {
-  currentVideo = idx;
-  currentPanel = 0;
-  const v = VIDEOS[idx];
-  document.getElementById('vidTitleBig').textContent = v.title;
-  document.getElementById('vidMetaRow').textContent = v.stats;
-  const likeNum = likedVideos[idx] ? v.likes + 1 : v.likes;
-  document.getElementById('likeNum').textContent = fmtNum(likeNum);
-  document.getElementById('likeBtn').classList.toggle('liked', !!likedVideos[idx]);
-  renderPanel();
-  renderModalComments(v.comments);
-  document.getElementById('modal').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeVideo() {
-  document.getElementById('modal').classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-function handleModalClick(e) {
-  if (e.target === document.getElementById('modal')) closeVideo();
-}
-
-function renderPanel() {
-  const v = VIDEOS[currentVideo];
-  const p = v.panels[currentPanel];
-  const total = v.panels.length;
-  document.getElementById('panelCounter').textContent = `${currentPanel + 1} / ${total}`;
-  document.getElementById('progressFill').style.width = `${((currentPanel + 1) / total) * 100}%`;
-  document.getElementById('prevBtn').disabled = currentPanel === 0;
-  document.getElementById('nextBtn').disabled = currentPanel === total - 1;
-  document.getElementById('nextBtn').textContent = currentPanel === total - 1 ? 'End ✓' : 'Next ▶';
-
-  const sb = document.getElementById('playerSb');
-  sb.innerHTML = `
-    <div class="sb-panel active">
-      <div class="sb-scene" style="background:${p.bg}">
-        ${p.scene}
-        <div class="sb-timestamp">${p.ts}</div>
-        <div class="sb-emotion">${p.emotion}</div>
-      </div>
-      <div class="sb-caption">
-        <div class="narrator">NARRATOR (DUDU)</div>
-        <p>${p.caption}</p>
-      </div>
-    </div>`;
-}
-
-function nextPanel() {
-  const v = VIDEOS[currentVideo];
-  if (currentPanel < v.panels.length - 1) {
-    currentPanel++;
-    renderPanel();
-  }
-}
-
-function prevPanel() {
-  if (currentPanel > 0) {
-    currentPanel--;
-    renderPanel();
-  }
-}
-
-function seekProgress(e) {
-  const rect = e.currentTarget.getBoundingClientRect();
-  const ratio = (e.clientX - rect.left) / rect.width;
-  const v = VIDEOS[currentVideo];
-  currentPanel = Math.min(v.panels.length - 1, Math.floor(ratio * v.panels.length));
-  renderPanel();
-}
-
-function renderModalComments(comments) {
-  const el = document.getElementById('modalComments');
-  el.innerHTML = `<h3>Comments</h3>` + comments.map(c => `
-    <div class="mc">
-      <div class="mc-av" style="background:${c.col}">${c.name[1].toUpperCase()}</div>
-      <div>
-        <div class="mc-name${c.creator ? ' creator' : ''}">${c.name}${c.creator ? ' ✓ ❤️' : ''}</div>
-        <div class="mc-text">${c.text}</div>
-        <div class="mc-likes">👍 ${c.likes}</div>
-      </div>
-    </div>`).join('');
-}
-
-// ════════════════════════════
-// LIKE BUTTON
-// ════════════════════════════
-function toggleLike() {
-  if (currentVideo === null) return;
-  const v = VIDEOS[currentVideo];
-  likedVideos[currentVideo] = !likedVideos[currentVideo];
-  const btn = document.getElementById('likeBtn');
-  btn.classList.toggle('liked', likedVideos[currentVideo]);
-  const num = likedVideos[currentVideo] ? v.likes + 1 : v.likes;
-  document.getElementById('likeNum').textContent = fmtNum(num);
-  if (likedVideos[currentVideo]) {
-    const burst = document.getElementById('likeBurst');
-    burst.classList.remove('pop');
-    void burst.offsetWidth;
-    burst.classList.add('pop');
-    showToast('Liked! 💗');
-  }
-}
-
-// ════════════════════════════
-// SUBSCRIBE
-// ════════════════════════════
-function toggleSubscribe() {
-  subbed = !subbed;
-  const btn = document.getElementById('subBtn');
-  const countEl = document.getElementById('subCount');
-  if (subbed) {
-    subCount++;
-    btn.textContent = '✓ SUBSCRIBED';
-    btn.classList.add('subscribed');
-    countEl.textContent = fmtNum(subCount) + ' subscribers';
-    fireConfetti();
-    showToast('Subscribed! 💗 Turn on notifications!');
-    ringBell();
-  } else {
-    subCount--;
-    btn.textContent = 'SUBSCRIBE';
-    btn.classList.remove('subscribed');
-    countEl.textContent = fmtNum(subCount) + ' subscribers';
-    showToast('Unsubscribed 😢');
-  }
-}
-
-function ringBell() {
-  const bell = document.getElementById('bellBtn');
-  bell.classList.add('ringing');
-  setTimeout(() => bell.classList.remove('ringing'), 800);
-  if (subbed) showToast('🔔 Notifications on!');
-}
-
-// ════════════════════════════
-// CONFETTI
-// ════════════════════════════
-function fireConfetti() {
-  const container = document.getElementById('confetti');
-  container.innerHTML = '';
-  container.classList.add('active');
-  const colors = ['#e91e8c','#ffd600','#7b1fa2','#1565c0','#ff4081','#ce93d8','#fff'];
-  for (let i = 0; i < 80; i++) {
-    const el = document.createElement('div');
-    el.className = 'conf';
-    el.style.cssText = `
-      left:${Math.random()*100}vw;
-      background:${colors[Math.floor(Math.random()*colors.length)]};
-      width:${6+Math.random()*10}px;
-      height:${6+Math.random()*10}px;
-      border-radius:${Math.random()>.5?'50%':'2px'};
-      animation-duration:${1.5+Math.random()*2}s;
-      animation-delay:${Math.random()*.5}s;`;
-    container.appendChild(el);
-  }
-  setTimeout(() => { container.classList.remove('active'); container.innerHTML=''; }, 3000);
-}
-
-// ════════════════════════════
-// REACTIONS
-// ════════════════════════════
-function toggleReact(el) {
-  const base = parseInt(el.dataset.base);
-  const numEl = el.querySelector('.react-num');
-  el.classList.toggle('on');
-  numEl.textContent = el.classList.contains('on') ? `${base+1}K` : `${base}K`;
-}
-
-// ════════════════════════════
-// TOAST
-// ════════════════════════════
-let toastTimer;
-function showToast(msg) {
-  const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => t.classList.remove('show'), 2500);
-}
-
-// ════════════════════════════
-// COUNTDOWN
-// ════════════════════════════
-function nextTuesday() {
-  const now = new Date();
-  const day = now.getDay();
-  let d = (2 - day + 7) % 7 || 7;
-  const t = new Date(now);
-  t.setDate(now.getDate() + d);
-  t.setHours(0,0,0,0);
-  return t;
-}
-function tick() {
-  const diff = nextTuesday() - new Date();
-  if (diff <= 0) {
-    ['cd-d','cd-h','cd-m','cd-s'].forEach(id => document.getElementById(id).textContent='0');
-    document.querySelector('.ctext').innerHTML="IT'S TODAY!! 🥺💗"; return;
-  }
-  document.getElementById('cd-d').textContent=Math.floor(diff/86400000);
-  document.getElementById('cd-h').textContent=String(Math.floor(diff%86400000/3600000)).padStart(2,'0');
-  document.getElementById('cd-m').textContent=String(Math.floor(diff%3600000/60000)).padStart(2,'0');
-  document.getElementById('cd-s').textContent=String(Math.floor(diff%60000/1000)).padStart(2,'0');
-}
-tick(); setInterval(tick,1000);
-
-// ════════════════════════════
-// TABS
-// ════════════════════════════
-document.querySelectorAll('.tab').forEach(t => {
-  t.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
-    t.classList.add('active');
-    showToast(`${t.textContent} tab 💗`);
-  });
-});
-
-// ════════════════════════════
-// SCROLL REVEAL
-// ════════════════════════════
-const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if(e.isIntersecting) e.target.style.animationPlayState='running'; });
-},{threshold:.15});
-document.querySelectorAll('.comment').forEach(c=>{c.style.animationPlayState='paused';obs.observe(c);});
-
-// ════════════════════════════
-// UTIL
-// ════════════════════════════
-function fmtNum(n) {
-  if (n>=1000000) return (n/1000000).toFixed(1).replace(/\.0$/,'')+'M';
-  if (n>=1000) return (n/1000).toFixed(1).replace(/\.0$/,'')+'K';
-  return n.toString();
-}
-
-// ESC to close
-document.addEventListener('keydown', e => { if(e.key==='Escape') closeVideo(); });
-</script>
-</body>
-</html>
+      { bg: '#fff9c4', ts: '5:01', emotion: 'GONE 💗', scene: `<svg viewBox="0 0 640 360"><rect width="640" height="360" fill="#fffde7"/><rect width="640" height="160" fill="#f5f5f5"/><circle cx="320" cy="32" r="30" fill="#FDD835"/><circle cx="320" cy="32" r="22" fill="#FFF9C4"/><ellipse cx="320" cy="255" rx="180" ry="95" fill="#CE93D8"/><ellipse cx="320" cy="240" rx="72" ry="76" fill="#F5C5A3"/><ellipse cx="317" cy="208" rx="74" ry="44" fill="#7B1FA2"/><ellipse cx="296" cy="244" rx="22" ry="26" fill="white"/><ellipse cx="344" cy="244" rx="22" ry="26" fill="white"/><ellipse cx="296" cy="246" rx="16" ry="20" fill="#5B3FA0"/><ellipse cx="344" cy="246" rx="16" ry="20" fill="#5B3FA0"/><text x="285" y="242" font-size="12">★</text><text x="334" y="242" font-size="12">★</text><path d="M280 272 Q320 294 360 272" stroke="#C0706A" stroke-width="4.5" fill="#FFB3C1"/><ellipse cx="256" cy="258" rx="26" ry="16" fill="#FFB3C1"
